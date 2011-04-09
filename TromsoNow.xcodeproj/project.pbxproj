@@ -1,0 +1,388 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D3623260D0F684500981E51 /* TromsoNowAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* TromsoNowAppDelegate.m */; };
+		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
+		2899E5220DE3E06400AC0155 /* TromsoNowViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E5210DE3E06400AC0155 /* TromsoNowViewController.xib */; };
+		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
+		28D7ACF80DDB3853001CB0EB /* TromsoNowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* TromsoNowViewController.m */; };
+		CC2C7B6712EFC2FD009DB69B /* WeatherDataEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = CC2C7B6612EFC2FD009DB69B /* WeatherDataEntity.m */; };
+		CC37D32F12CC2B3C00AC6473 /* WeatherDataEntityView.m in Sources */ = {isa = PBXBuildFile; fileRef = CC37D32E12CC2B3C00AC6473 /* WeatherDataEntityView.m */; };
+		CC4DB265134F1E88002D872D /* graphback.png in Resources */ = {isa = PBXBuildFile; fileRef = CC4DB263134F1E87002D872D /* graphback.png */; };
+		CC4DB266134F1E88002D872D /* graphcapr.png in Resources */ = {isa = PBXBuildFile; fileRef = CC4DB264134F1E87002D872D /* graphcapr.png */; };
+		CC4DB268134F1E9A002D872D /* graphcapl.png in Resources */ = {isa = PBXBuildFile; fileRef = CC4DB267134F1E9A002D872D /* graphcapl.png */; };
+		CC80645B134B3568003E3362 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC80645A134B3568003E3362 /* QuartzCore.framework */; };
+		CC80646C134B3D70003E3362 /* WeatherDataGraphView.m in Sources */ = {isa = PBXBuildFile; fileRef = CC80646B134B3D70003E3362 /* WeatherDataGraphView.m */; };
+		CC806470134B47A5003E3362 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = CC80646F134B47A5003E3362 /* JSONKit.m */; };
+		CC8E95FB129FAE6B00010442 /* uit.png in Resources */ = {isa = PBXBuildFile; fileRef = CC8E95FA129FAE6B00010442 /* uit.png */; };
+		CCA38524131D0F3F007159D0 /* til90.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CCA38523131D0F3F007159D0 /* til90.jpg */; };
+		CCA385DF131D25B5007159D0 /* bar2.png in Resources */ = {isa = PBXBuildFile; fileRef = CCA385DE131D25B5007159D0 /* bar2.png */; };
+		CCC2CB2612AE596F0097F03D /* bar.png in Resources */ = {isa = PBXBuildFile; fileRef = CCC2CB2512AE596F0097F03D /* bar.png */; };
+		CCC2CB2B12AE59EC0097F03D /* StatBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = CCC2CB2A12AE59EC0097F03D /* StatBarView.m */; };
+		CCC2CB6412AE5F8D0097F03D /* displayWeatherData.png in Resources */ = {isa = PBXBuildFile; fileRef = CCC2CB6312AE5F8D0097F03D /* displayWeatherData.png */; };
+		CCC2CB7C12AE62C10097F03D /* concept.png in Resources */ = {isa = PBXBuildFile; fileRef = CCC2CB7B12AE62C10097F03D /* concept.png */; };
+		CCC4B36412AB81F4003C75EC /* WeatherDataLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = CCC4B36312AB81F4003C75EC /* WeatherDataLayer.m */; };
+		CCC4B36A12AB890D003C75EC /* UiTDataProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = CCC4B36912AB890D003C75EC /* UiTDataProvider.m */; };
+		CCCAD38E12C2312E0090124A /* WeatherDataBar.m in Sources */ = {isa = PBXBuildFile; fileRef = CCCAD38D12C2312E0090124A /* WeatherDataBar.m */; };
+		CCFC54C1131D0EC5005D5F92 /* til.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CCFC54C0131D0EC5005D5F92 /* til.jpg */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1D3623240D0F684500981E51 /* TromsoNowAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TromsoNowAppDelegate.h; sourceTree = "<group>"; };
+		1D3623250D0F684500981E51 /* TromsoNowAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TromsoNowAppDelegate.m; sourceTree = "<group>"; wrapsLines = 1; };
+		1D6058910D05DD3D006BFB54 /* TromsoNow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TromsoNow.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2899E5210DE3E06400AC0155 /* TromsoNowViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TromsoNowViewController.xib; sourceTree = "<group>"; };
+		28AD733E0D9D9553002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		28D7ACF60DDB3853001CB0EB /* TromsoNowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TromsoNowViewController.h; sourceTree = "<group>"; };
+		28D7ACF70DDB3853001CB0EB /* TromsoNowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TromsoNowViewController.m; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		32CA4F630368D1EE00C91783 /* TromsoNow_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TromsoNow_Prefix.pch; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* TromsoNow-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "TromsoNow-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		CC2C7B6512EFC2FD009DB69B /* WeatherDataEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherDataEntity.h; sourceTree = "<group>"; };
+		CC2C7B6612EFC2FD009DB69B /* WeatherDataEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherDataEntity.m; sourceTree = "<group>"; };
+		CC37D32D12CC2B3C00AC6473 /* WeatherDataEntityView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherDataEntityView.h; sourceTree = "<group>"; };
+		CC37D32E12CC2B3C00AC6473 /* WeatherDataEntityView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherDataEntityView.m; sourceTree = "<group>"; };
+		CC4DB263134F1E87002D872D /* graphback.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = graphback.png; path = Assetts/graphback.png; sourceTree = "<group>"; };
+		CC4DB264134F1E87002D872D /* graphcapr.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = graphcapr.png; path = Assetts/graphcapr.png; sourceTree = "<group>"; };
+		CC4DB267134F1E9A002D872D /* graphcapl.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = graphcapl.png; path = Assetts/graphcapl.png; sourceTree = "<group>"; };
+		CC80645A134B3568003E3362 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		CC80646A134B3D70003E3362 /* WeatherDataGraphView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherDataGraphView.h; sourceTree = "<group>"; };
+		CC80646B134B3D70003E3362 /* WeatherDataGraphView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherDataGraphView.m; sourceTree = "<group>"; };
+		CC80646E134B47A5003E3362 /* JSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSONKit.h; sourceTree = "<group>"; };
+		CC80646F134B47A5003E3362 /* JSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSONKit.m; sourceTree = "<group>"; };
+		CC8E95FA129FAE6B00010442 /* uit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = uit.png; sourceTree = "<group>"; };
+		CCA38523131D0F3F007159D0 /* til90.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = til90.jpg; path = Assetts/til90.jpg; sourceTree = "<group>"; };
+		CCA385DE131D25B5007159D0 /* bar2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bar2.png; path = Assetts/bar2.png; sourceTree = "<group>"; };
+		CCC2CB2512AE596F0097F03D /* bar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bar.png; path = Assetts/bar.png; sourceTree = "<group>"; };
+		CCC2CB2912AE59EC0097F03D /* StatBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StatBarView.h; sourceTree = "<group>"; };
+		CCC2CB2A12AE59EC0097F03D /* StatBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StatBarView.m; sourceTree = "<group>"; };
+		CCC2CB6312AE5F8D0097F03D /* displayWeatherData.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = displayWeatherData.png; path = Assetts/displayWeatherData.png; sourceTree = "<group>"; };
+		CCC2CB7B12AE62C10097F03D /* concept.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = concept.png; path = Assetts/concept.png; sourceTree = "<group>"; };
+		CCC4B36212AB81F4003C75EC /* WeatherDataLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherDataLayer.h; sourceTree = "<group>"; };
+		CCC4B36312AB81F4003C75EC /* WeatherDataLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherDataLayer.m; sourceTree = "<group>"; };
+		CCC4B36812AB890D003C75EC /* UiTDataProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UiTDataProvider.h; sourceTree = "<group>"; };
+		CCC4B36912AB890D003C75EC /* UiTDataProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UiTDataProvider.m; sourceTree = "<group>"; };
+		CCCAD38C12C2312E0090124A /* WeatherDataBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherDataBar.h; sourceTree = "<group>"; };
+		CCCAD38D12C2312E0090124A /* WeatherDataBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherDataBar.m; sourceTree = "<group>"; };
+		CCFC54C0131D0EC5005D5F92 /* til.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = til.jpg; path = Assetts/til.jpg; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CC80645B134B3568003E3362 /* QuartzCore.framework in Frameworks */,
+				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
+				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
+				288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				CCC2CB2D12AE5A9D0097F03D /* Views */,
+				CCC4B36012AB81B7003C75EC /* Data */,
+				1D3623240D0F684500981E51 /* TromsoNowAppDelegate.h */,
+				1D3623250D0F684500981E51 /* TromsoNowAppDelegate.m */,
+				28D7ACF60DDB3853001CB0EB /* TromsoNowViewController.h */,
+				28D7ACF70DDB3853001CB0EB /* TromsoNowViewController.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* TromsoNow.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				CC80645A134B3568003E3362 /* QuartzCore.framework */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* TromsoNow_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CC4DB267134F1E9A002D872D /* graphcapl.png */,
+				CC4DB263134F1E87002D872D /* graphback.png */,
+				CC4DB264134F1E87002D872D /* graphcapr.png */,
+				CCA385DE131D25B5007159D0 /* bar2.png */,
+				CCA38523131D0F3F007159D0 /* til90.jpg */,
+				CCFC54C0131D0EC5005D5F92 /* til.jpg */,
+				CCC2CB7B12AE62C10097F03D /* concept.png */,
+				CCC2CB6312AE5F8D0097F03D /* displayWeatherData.png */,
+				CCC2CB2512AE596F0097F03D /* bar.png */,
+				CC8E95FA129FAE6B00010442 /* uit.png */,
+				2899E5210DE3E06400AC0155 /* TromsoNowViewController.xib */,
+				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
+				8D1107310486CEB800E47090 /* TromsoNow-Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CC80646D134B4798003E3362 /* JSONKit */,
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+				288765A40DF7441C002DB57D /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CC80646D134B4798003E3362 /* JSONKit */ = {
+			isa = PBXGroup;
+			children = (
+				CC80646E134B47A5003E3362 /* JSONKit.h */,
+				CC80646F134B47A5003E3362 /* JSONKit.m */,
+			);
+			name = JSONKit;
+			sourceTree = "<group>";
+		};
+		CCC2CB2D12AE5A9D0097F03D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CCC2CB2912AE59EC0097F03D /* StatBarView.h */,
+				CCC2CB2A12AE59EC0097F03D /* StatBarView.m */,
+				CCCAD38C12C2312E0090124A /* WeatherDataBar.h */,
+				CCCAD38D12C2312E0090124A /* WeatherDataBar.m */,
+				CC37D32D12CC2B3C00AC6473 /* WeatherDataEntityView.h */,
+				CC37D32E12CC2B3C00AC6473 /* WeatherDataEntityView.m */,
+				CC80646A134B3D70003E3362 /* WeatherDataGraphView.h */,
+				CC80646B134B3D70003E3362 /* WeatherDataGraphView.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		CCC4B36012AB81B7003C75EC /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				CCC4B36212AB81F4003C75EC /* WeatherDataLayer.h */,
+				CCC4B36312AB81F4003C75EC /* WeatherDataLayer.m */,
+				CCC4B36812AB890D003C75EC /* UiTDataProvider.h */,
+				CCC4B36912AB890D003C75EC /* UiTDataProvider.m */,
+				CC2C7B6512EFC2FD009DB69B /* WeatherDataEntity.h */,
+				CC2C7B6612EFC2FD009DB69B /* WeatherDataEntity.m */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* TromsoNow */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "TromsoNow" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TromsoNow;
+			productName = TromsoNow;
+			productReference = 1D6058910D05DD3D006BFB54 /* TromsoNow.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "TromsoNow" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* TromsoNow */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
+				2899E5220DE3E06400AC0155 /* TromsoNowViewController.xib in Resources */,
+				CC8E95FB129FAE6B00010442 /* uit.png in Resources */,
+				CCC2CB2612AE596F0097F03D /* bar.png in Resources */,
+				CCC2CB6412AE5F8D0097F03D /* displayWeatherData.png in Resources */,
+				CCC2CB7C12AE62C10097F03D /* concept.png in Resources */,
+				CCFC54C1131D0EC5005D5F92 /* til.jpg in Resources */,
+				CCA38524131D0F3F007159D0 /* til90.jpg in Resources */,
+				CCA385DF131D25B5007159D0 /* bar2.png in Resources */,
+				CC4DB265134F1E88002D872D /* graphback.png in Resources */,
+				CC4DB266134F1E88002D872D /* graphcapr.png in Resources */,
+				CC4DB268134F1E9A002D872D /* graphcapl.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				1D3623260D0F684500981E51 /* TromsoNowAppDelegate.m in Sources */,
+				28D7ACF80DDB3853001CB0EB /* TromsoNowViewController.m in Sources */,
+				CCC4B36412AB81F4003C75EC /* WeatherDataLayer.m in Sources */,
+				CCC4B36A12AB890D003C75EC /* UiTDataProvider.m in Sources */,
+				CCC2CB2B12AE59EC0097F03D /* StatBarView.m in Sources */,
+				CCCAD38E12C2312E0090124A /* WeatherDataBar.m in Sources */,
+				CC37D32F12CC2B3C00AC6473 /* WeatherDataEntityView.m in Sources */,
+				CC2C7B6712EFC2FD009DB69B /* WeatherDataEntity.m in Sources */,
+				CC80646C134B3D70003E3362 /* WeatherDataGraphView.m in Sources */,
+				CC806470134B47A5003E3362 /* JSONKit.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ADDITIONAL_SDKS = "/Library/SDKs/CorePlotSDK/${PLATFORM_NAME}.sdk";
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = TromsoNow_Prefix.pch;
+				INFOPLIST_FILE = "TromsoNow-Info.plist";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+					"-lCorePlot",
+				);
+				PRODUCT_NAME = TromsoNow;
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ADDITIONAL_SDKS = "/Library/SDKs/CorePlotSDK/${PLATFORM_NAME}.sdk";
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = TromsoNow_Prefix.pch;
+				INFOPLIST_FILE = "TromsoNow-Info.plist";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+					"-lCorePlot",
+				);
+				PRODUCT_NAME = TromsoNow;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				PREBINDING = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "TromsoNow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "TromsoNow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}
