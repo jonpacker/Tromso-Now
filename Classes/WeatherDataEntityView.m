@@ -14,10 +14,9 @@
 @synthesize
 	dataLabel,
 	unitLabel,
-	labelLabel,
-detailDisclosure, drawerEdgeImage, activityIndicator;
+	labelLabel,drawerEdgeImage;
 
--(id) initWithData:(WeatherDataEntity*)wdata atPoint:(CGPoint)point
+-(id) initWithData:(WeatherDataEntity*)wdata graphData:(NSArray*)graphData atPoint:(CGPoint)point
 {
 	if ((self = [super initWithFrame:CGRectMake(point.x, point.y, 300.0f, 135.0f)]) != nil)
 	{
@@ -26,21 +25,30 @@ detailDisclosure, drawerEdgeImage, activityIndicator;
 		dataLabel = [UILabel new];
 		unitLabel = [UILabel new];
 		labelLabel = [UILabel new];
-		detailDisclosure = [UIButton buttonWithType:UIButtonTypeInfoDark];
-    detailDisclosure.layer.shadowColor = [UIColor whiteColor].CGColor;
-    detailDisclosure.layer.shadowOffset = CGSizeMake(0, 1);
-    detailDisclosure.layer.shadowRadius = 0.0f;
-    detailDisclosure.layer.shadowOpacity = 0.8;
     
-    activityIndicator = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhite];
-    activityIndicator.hidesWhenStopped = YES;
-    activityIndicator.layer.shadowOffset = CGSizeMake(0, 1);
-    activityIndicator.layer.shadowColor = [UIColor blackColor].CGColor;
-    activityIndicator.layer.shadowOpacity = 1.0f;
-    activityIndicator.layer.shadowRadius = 0.8f;
-
+    self.clipsToBounds = NO;
 		self.data = wdata;
+    
+    UIView* backgroundImage = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 223, 137)];
+    backgroundImage.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"bar"]];
+    [self addSubview:backgroundImage];
+    [backgroundImage release];
 
+    UIButton* plusminus = [UIButton buttonWithType:UIButtonTypeCustom];
+    
+    [plusminus setBackgroundImage:[UIImage imageNamed:@"plus"] forState:UIControlStateNormal];
+    [plusminus setBackgroundImage:[UIImage imageNamed:@"minus"] forState:UIControlStateSelected];
+    
+    plusminus.frame = CGRectMake(0, 0, 30, 30);
+    plusminus.center = CGPointMake(223 + 17, 73);
+    plusminus.transform = CGAffineTransformScale(plusminus.transform, 0.9, 0.9);
+    plusminus.alpha = 0.8;
+    plusminus.enabled = YES;
+    
+    [plusminus addTarget:self action:@selector(display) forControlEvents:UIControlEventTouchUpInside];
+    
+    [self addSubview:plusminus];
+    
 		dataLabel.shadowOffset = CGSizeMake(0.0f, 2.0f);
 		unitLabel.shadowOffset = CGSizeMake(0.0f, 2.0f);
 		labelLabel.shadowOffset = CGSizeMake(0.0f, 1.0f);
@@ -71,7 +79,7 @@ detailDisclosure, drawerEdgeImage, activityIndicator;
     self.layer.masksToBounds = NO;
     self.showsDrawerEdge = YES;
     drawerEdgeImage = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"graphcapl.png"]];
-    drawerEdgeImage.center = CGPointMake(self.frame.size.width - (drawerEdgeImage.frame.size.width/2), (drawerEdgeImage.frame.size.height/2)+2);
+    drawerEdgeImage.center = CGPointMake(223 + (drawerEdgeImage.frame.size.width/2), (drawerEdgeImage.frame.size.height/2)+2);
     drawerEdgeImage.hidden = !self.showsDrawerEdge;
 		[self addSubview:drawerEdgeImage];
     
@@ -80,50 +88,25 @@ detailDisclosure, drawerEdgeImage, activityIndicator;
 		[self addSubview:dataLabel];
 		[self addSubview:unitLabel];
 		[self addSubview:labelLabel];
-		[self addSubview:detailDisclosure];
-    [self addSubview:activityIndicator];
+    [self bringSubviewToFront:plusminus];
+    
+    [self setupGraphWithData:graphData];
 	}
 	return self;
 }
-
-- (void) setLoading:(BOOL)loading
+- (void) setupGraphWithData:(NSArray *)kData 
 {
-  if ([activityIndicator isAnimating] == loading) return;
+  const int peek_sz = 31;
+  const int graph_sz = 600;
+  const int graph_offset = 223;
   
-  if (loading)
-  {
-    detailDisclosure.hidden = YES;
-    [activityIndicator startAnimating];
-  }
-  else 
-  {
-    detailDisclosure.hidden = NO;
-    [activityIndicator stopAnimating];
-  }
-}
-
-- (BOOL) loading 
-{
-  return [activityIndicator isAnimating];
-}
-
-- (void) becomeGraphWithData:(NSArray *)kData 
-{
-  self.frame = CGRectMake(self.frame.origin.x,
-                          self.frame.origin.y,
-                          1024,
-                          self.frame.size.height);
-  WeatherDataGraphView* graph = 
-  [[WeatherDataGraphView alloc] initWithFrame:CGRectMake(223,
-                                                         2,
-                                                         780,
-                                                         135)];
+  _graph = [[WeatherDataGraphView alloc] initWithFrame:CGRectMake(-graph_sz + graph_offset + peek_sz, 2,  graph_sz, 135)];
   CGFloat low = CGFLOAT_MAX, high = CGFLOAT_MIN;
-  graph.dataKey = [WeatherDataEntityView graphKeyForLabel:labelLabel.text];
+  _graph.dataKey = [WeatherDataEntityView graphKeyForLabel:labelLabel.text];
   
   for (NSDictionary* dataSet in kData)
   {
-    NSNumber* val = [dataSet objectForKey:graph.dataKey];
+    NSNumber* val = [dataSet objectForKey:_graph.dataKey];
     CGFloat fval = [val floatValue];
     
     if (fval < low) low = fval;
@@ -133,24 +116,23 @@ detailDisclosure, drawerEdgeImage, activityIndicator;
   CGFloat mean = (high + low) / 2;
   //so we buffer the values by 1/4th of mean.
   
-  graph.minValue = floorf(low - (mean / 8));
-  graph.maxValue = ceilf(high + (mean / 8));
+  _graph.minValue = floorf(low - (mean / 8));
+  _graph.maxValue = ceilf(high + (mean / 8));
   
   // if these values are still below 10 do some hoodoo to put them within a
   // bracket of 10
-  if (graph.maxValue - graph.minValue < 10) 
+  if (_graph.maxValue - _graph.minValue < 10) 
   {
-    CGFloat diff = graph.maxValue - graph.minValue;
+    CGFloat diff = _graph.maxValue - _graph.minValue;
     CGFloat pad = 5 - (diff/2);
-    graph.maxValue += pad;
-    graph.minValue -= pad;
+    _graph.maxValue += pad;
+    _graph.minValue -= pad;
   }
   
-  graph.dataSource = kData;
+  _graph.dataSource = kData;
   
-  [self addSubview:graph];
-  [self bringSubviewToFront:drawerEdgeImage];
-  [graph release];
+  [self addSubview:_graph];
+  [self sendSubviewToBack:_graph];
 }
 
 + (NSString*) graphKeyForLabel:(NSString*)kLabel 
@@ -191,8 +173,6 @@ detailDisclosure, drawerEdgeImage, activityIndicator;
 
 -(void) layoutSubviews 
 {
-	detailDisclosure.center = CGPointMake(labelWidth + 45.0f, 120.0f);
-  activityIndicator.center = detailDisclosure.center;
 	dataLabel.frame = CGRectMake(20.0f, 13.0f, 180, 60.0f);
 	unitLabel.frame = minified ? CGRectMake(60.0f, 33.0f, 245.0f, 20.0f) : CGRectMake(25.0f, 78.0f, 245.0f, 20.0f);
 	labelLabel.frame = CGRectMake(25.0f, 105.0f, 245.0f, 30.0f);
@@ -211,7 +191,6 @@ detailDisclosure, drawerEdgeImage, activityIndicator;
 	{
 		dataLabel.font = [UIFont fontWithName:@"Helvetica-Bold" size:18.0f];
 		labelLabel.hidden = YES;
-		detailDisclosure.hidden = YES;
     drawerEdgeImage.hidden = YES;
 		
 		if (![data.unit isEqualToString:@"degrees celsius"])
@@ -226,7 +205,6 @@ detailDisclosure, drawerEdgeImage, activityIndicator;
 		dataLabel.hidden = NO;
 		unitLabel.hidden = NO;
 		labelLabel.hidden = NO;
-		detailDisclosure.hidden = NO;
     drawerEdgeImage.hidden = NO;
 	}
 	
@@ -249,7 +227,6 @@ detailDisclosure, drawerEdgeImage, activityIndicator;
 
 - (void)dealloc {
   [drawerEdgeImage release];
-  [activityIndicator release];
   [dataLabel release];
   [unitLabel release];
   [labelLabel release];

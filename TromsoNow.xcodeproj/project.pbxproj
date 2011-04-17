@@ -20,6 +20,8 @@
 		CC4DB265134F1E88002D872D /* graphback.png in Resources */ = {isa = PBXBuildFile; fileRef = CC4DB263134F1E87002D872D /* graphback.png */; };
 		CC4DB266134F1E88002D872D /* graphcapr.png in Resources */ = {isa = PBXBuildFile; fileRef = CC4DB264134F1E87002D872D /* graphcapr.png */; };
 		CC4DB268134F1E9A002D872D /* graphcapl.png in Resources */ = {isa = PBXBuildFile; fileRef = CC4DB267134F1E9A002D872D /* graphcapl.png */; };
+		CC4DB26B1351D9C5002D872D /* minus.png in Resources */ = {isa = PBXBuildFile; fileRef = CC4DB2691351D9C5002D872D /* minus.png */; };
+		CC4DB26C1351D9C5002D872D /* plus.png in Resources */ = {isa = PBXBuildFile; fileRef = CC4DB26A1351D9C5002D872D /* plus.png */; };
 		CC80645B134B3568003E3362 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC80645A134B3568003E3362 /* QuartzCore.framework */; };
 		CC80646C134B3D70003E3362 /* WeatherDataGraphView.m in Sources */ = {isa = PBXBuildFile; fileRef = CC80646B134B3D70003E3362 /* WeatherDataGraphView.m */; };
 		CC806470134B47A5003E3362 /* JSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = CC80646F134B47A5003E3362 /* JSONKit.m */; };
@@ -57,6 +59,8 @@
 		CC4DB263134F1E87002D872D /* graphback.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = graphback.png; path = Assetts/graphback.png; sourceTree = "<group>"; };
 		CC4DB264134F1E87002D872D /* graphcapr.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = graphcapr.png; path = Assetts/graphcapr.png; sourceTree = "<group>"; };
 		CC4DB267134F1E9A002D872D /* graphcapl.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = graphcapl.png; path = Assetts/graphcapl.png; sourceTree = "<group>"; };
+		CC4DB2691351D9C5002D872D /* minus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = minus.png; sourceTree = "<group>"; };
+		CC4DB26A1351D9C5002D872D /* plus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plus.png; sourceTree = "<group>"; };
 		CC80645A134B3568003E3362 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		CC80646A134B3D70003E3362 /* WeatherDataGraphView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherDataGraphView.h; sourceTree = "<group>"; };
 		CC80646B134B3D70003E3362 /* WeatherDataGraphView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherDataGraphView.m; sourceTree = "<group>"; };
@@ -140,6 +144,8 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				CC4DB2691351D9C5002D872D /* minus.png */,
+				CC4DB26A1351D9C5002D872D /* plus.png */,
 				CC4DB267134F1E9A002D872D /* graphcapl.png */,
 				CC4DB263134F1E87002D872D /* graphback.png */,
 				CC4DB264134F1E87002D872D /* graphcapr.png */,
@@ -266,6 +272,8 @@
 				CC4DB265134F1E88002D872D /* graphback.png in Resources */,
 				CC4DB266134F1E88002D872D /* graphcapr.png in Resources */,
 				CC4DB268134F1E9A002D872D /* graphcapl.png in Resources */,
+				CC4DB26B1351D9C5002D872D /* minus.png in Resources */,
+				CC4DB26C1351D9C5002D872D /* plus.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

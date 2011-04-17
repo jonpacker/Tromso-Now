@@ -14,12 +14,11 @@
 
 @interface WeatherDataEntityView : UIView {
 	WeatherDataEntity* data;
-	
+	WeatherDataGraphView* _graph;
+  
 	UILabel* dataLabel;
 	UILabel* unitLabel;
 	UILabel* labelLabel;
-	UIButton* detailDisclosure;
-  UIActivityIndicatorView* activityIndicator;
   
   BOOL showsDrawerEdge;
   
@@ -27,8 +26,8 @@
 	BOOL minified;
 }
 
--(id) initWithData:(WeatherDataEntity*)wdata atPoint:(CGPoint)point; 
-- (void) becomeGraphWithData:(NSArray*)data;
+-(id) initWithData:(WeatherDataEntity*)wdata graphData:(NSArray*)data atPoint:(CGPoint)point; 
+- (void) setupGraphWithData:(NSArray*)data;
 
 + (NSString*) graphKeyForLabel:(NSString*)kLabel;
 
@@ -37,10 +36,8 @@
 @property (nonatomic, retain) UILabel* dataLabel;
 @property (nonatomic, retain) UILabel* unitLabel;
 @property (nonatomic, retain) UILabel* labelLabel;
-@property (nonatomic, retain) UIButton* detailDisclosure;
 @property (nonatomic, retain) UIImageView* drawerEdgeImage;
-@property (nonatomic, retain) UIActivityIndicatorView* activityIndicator;
-@property BOOL loading;
+@property (nonatomic, readonly, retain) WeatherDataGraphView* graph;
 
 @property BOOL showsDrawerEdge;
 @property BOOL minified;

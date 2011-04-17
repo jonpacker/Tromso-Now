@@ -27,8 +27,11 @@ static const CGFloat lineTransVar = 0.25f;
     self = [super initWithFrame:frame];
     if (self) {
       self.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"graphback"]];
+      //self.backgroundColor = [UIColor blueColor];
+      
       UIImageView* shelfDrop = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"graphcapl"]];
-      shelfDrop.frame = CGRectMake(frame.size.width, 0, shelfDrop.frame.size.width, shelfDrop.frame.size.height);
+      shelfDrop.center = CGPointMake(frame.size.width + (shelfDrop.frame.size.width / 2), (shelfDrop.frame.size.height / 2));
+      
       [self addSubview:shelfDrop];
       [shelfDrop release];
       _drawGraph = NO;

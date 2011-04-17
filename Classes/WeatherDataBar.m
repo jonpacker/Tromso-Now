@@ -55,10 +55,10 @@ const CGFloat dataEntityInterval = 254.0f;
     dataView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"bar2.png"]];
     dataView.scrollEnabled = YES;
     
-    UITapGestureRecognizer* tgr = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(receiveTapFrom:)];
-    tgr.numberOfTouchesRequired = 1;
-    tgr.delegate = self;
-    [self addGestureRecognizer:tgr];
+    //UITapGestureRecognizer* tgr = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(receiveTapFrom:)];
+    //tgr.numberOfTouchesRequired = 1;
+    //tgr.delegate = self;
+    //[self addGestureRecognizer:tgr];
     
     self.frame = CGRectMake(0.0f, 2.0f, 1024.0f, 179.0f);
     dataView.frame = CGRectMake(0.0f, 0.0f, 1024.0f, 181.0f);
@@ -70,7 +70,7 @@ const CGFloat dataEntityInterval = 254.0f;
   }
   return self;
 }
-
+/*
 - (BOOL) gestureRecognizer:(UIGestureRecognizer*)recognizer
         shouldReceiveTouch:(UITouch *)touch
 {
@@ -91,7 +91,8 @@ const CGFloat dataEntityInterval = 254.0f;
   
   return hitsInsideGraphToggleButton;
 }
-
+ */
+/*
 - (void) receiveTapFrom:(UIGestureRecognizer*) ugr
 {
   WeatherDataEntityView* dataEntity = (WeatherDataEntityView*)[dataView viewWithTag:willTouchGraphButtonWithTag];
@@ -99,9 +100,10 @@ const CGFloat dataEntityInterval = 254.0f;
   [self performSelectorInBackground:@selector(graphViewWithTag:) withObject:[NSNumber numberWithInt:willTouchGraphButtonWithTag]];
   [self setView:dataEntity isIsolated:YES];
 }
-
+*/
 // next - read json from host. delay transform until data is ready
 // draw graph.
+/*
 - (void) graphViewWithTag:(NSNumber*)tag
 {
   NSAutoreleasePool *pool = [[NSAutoreleasePool alloc] init];
@@ -110,7 +112,7 @@ const CGFloat dataEntityInterval = 254.0f;
   [dataEntity becomeGraphWithData:array];
   dataEntity.loading = NO;
   [pool release];
-}
+}*/
 - (void) setView:(WeatherDataEntityView*)view isIsolated:(BOOL)kIsolate
 {
   if (kIsolate) 
@@ -150,6 +152,7 @@ const CGFloat dataEntityInterval = 254.0f;
 {
 	NSAutoreleasePool *pool = [NSAutoreleasePool new];
 	
+  NSArray* gdata = [[NSData dataWithContentsOfURL:[NSURL URLWithString:@"http://www.jonpacker.com/uitds/data.json"]] objectFromJSONData];
 	NSArray* nsa = [dataProvider retrieveWeatherData];
 	
 	[nsa enumerateObjectsUsingBlock: ^(id obj, NSUInteger idx, BOOL *stop) {
@@ -203,6 +206,7 @@ const CGFloat dataEntityInterval = 254.0f;
 {
 	NSAutoreleasePool *pool = [NSAutoreleasePool new];
 	
+  NSArray* gdata = [[NSData dataWithContentsOfURL:[NSURL URLWithString:@"http://www.jonpacker.com/uitds/data.json"]] objectFromJSONData];
 	NSArray* nsa = [dataProvider retrieveWeatherData];
 	[dataView setContentSize:CGSizeMake(dataEntityInterval * ([nsa count] - 3), 181.0f)];
 	
@@ -213,18 +217,25 @@ const CGFloat dataEntityInterval = 254.0f;
 		WeatherDataEntity *entity = (WeatherDataEntity*)obj;
 		if (entity.unit == nil)
 			return;
-		WeatherDataEntityView* v = [[WeatherDataEntityView alloc] initWithData:entity atPoint:CGPointMake(*xPos, -2.0f)];
+    
+		WeatherDataEntityView* v = [[WeatherDataEntityView alloc] initWithData:entity graphData:gdata atPoint:CGPointMake(*xPos, -2.0f)];
 		v.tag = idx + 1;
-		[v.detailDisclosure addTarget:self action:@selector(showDetail:) forControlEvents:UIControlEventTouchDown];
 		
-		[dataView addSubview:v];
+    if (0 == [[dataView subviews] count]) 
+    {
+      [dataView addSubview:v];
+    }
+    else 
+    {
+      [dataView insertSubview:v atIndex:0];
+    }
 		[v release];
     
 		*xPos += dataEntityInterval;
 	}];
 	
   //hackily disable shadow on final tab
-  ((WeatherDataEntityView*)[[dataView subviews] lastObject]).showsDrawerEdge = NO;
+  //((WeatherDataEntityView*)[[dataView subviews] lastObject]).showsDrawerEdge = NO;
   
 	self.minified = YES;
 	
