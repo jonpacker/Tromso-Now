@@ -1,697 +1,0 @@
-TTromsoNow
-v7
-r0
-t320845699.995646
-cCheck dependencies
-cCpResource build/Debug-iphoneos/TromsoNow.app/ResourceRules.plist /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/ResourceRules.plist
-cProcessInfoPlistFile /Users/jonpacker/Documents/Dev/TromsoNow/build/Debug-iphoneos/TromsoNow.app/Info.plist TromsoNow-Info.plist
-cCompileXIB /Users/jonpacker/Documents/Dev/TromsoNow/MainWindow.xib
-cCompileXIB /Users/jonpacker/Documents/Dev/TromsoNow/TromsoNowViewController.xib
-cCopyPNGFile /Users/jonpacker/Documents/Dev/TromsoNow/build/Debug-iphoneos/TromsoNow.app/uit.png uit.png
-cCopyPNGFile /Users/jonpacker/Documents/Dev/TromsoNow/build/Debug-iphoneos/TromsoNow.app/bar.png Assetts/bar.png
-cCopyPNGFile /Users/jonpacker/Documents/Dev/TromsoNow/build/Debug-iphoneos/TromsoNow.app/displayWeatherData.png Assetts/displayWeatherData.png
-cCopyPNGFile /Users/jonpacker/Documents/Dev/TromsoNow/build/Debug-iphoneos/TromsoNow.app/concept.png Assetts/concept.png
-cCpResource build/Debug-iphoneos/TromsoNow.app/til.jpg Assetts/til.jpg
-cCpResource build/Debug-iphoneos/TromsoNow.app/til90.jpg Assetts/til90.jpg
-cCopyPNGFile /Users/jonpacker/Documents/Dev/TromsoNow/build/Debug-iphoneos/TromsoNow.app/bar2.png Assetts/bar2.png
-cProcessPCH /var/folders/Hn/Hn9GUMEKECmBpGvXcLoGVU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TromsoNow_Prefix-ffpawconjevyyyeargkbiwvqiylx/TromsoNow_Prefix.pch.gch TromsoNow_Prefix.pch normal armv7 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/TromsoNow.build/Debug-iphoneos/TromsoNow.build/Objects-normal/armv7/main.o /Users/jonpacker/Documents/Dev/TromsoNow/main.m normal armv7 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/TromsoNow.build/Debug-iphoneos/TromsoNow.build/Objects-normal/armv7/TromsoNowAppDelegate.o /Users/jonpacker/Documents/Dev/TromsoNow/Classes/TromsoNowAppDelegate.m normal armv7 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/TromsoNow.build/Debug-iphoneos/TromsoNow.build/Objects-normal/armv7/TromsoNowViewController.o /Users/jonpacker/Documents/Dev/TromsoNow/Classes/TromsoNowViewController.m normal armv7 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/TromsoNow.build/Debug-iphoneos/TromsoNow.build/Objects-normal/armv7/WeatherDataLayer.o /Users/jonpacker/Documents/Dev/TromsoNow/Classes/WeatherDataLayer.m normal armv7 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/TromsoNow.build/Debug-iphoneos/TromsoNow.build/Objects-normal/armv7/UiTDataProvider.o /Users/jonpacker/Documents/Dev/TromsoNow/Classes/UiTDataProvider.m normal armv7 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/TromsoNow.build/Debug-iphoneos/TromsoNow.build/Objects-normal/armv7/StatBarView.o /Users/jonpacker/Documents/Dev/TromsoNow/Classes/StatBarView.m normal armv7 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/TromsoNow.build/Debug-iphoneos/TromsoNow.build/Objects-normal/armv7/WeatherDataBar.o /Users/jonpacker/Documents/Dev/TromsoNow/Classes/WeatherDataBar.m normal armv7 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/TromsoNow.build/Debug-iphoneos/TromsoNow.build/Objects-normal/armv7/WeatherDataEntityView.o /Users/jonpacker/Documents/Dev/TromsoNow/Classes/WeatherDataEntityView.m normal armv7 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/TromsoNow.build/Debug-iphoneos/TromsoNow.build/Objects-normal/armv7/WeatherDataEntity.o /Users/jonpacker/Documents/Dev/TromsoNow/Classes/WeatherDataEntity.m normal armv7 objective-c com.apple.compilers.gcc.4_2
-cProcessProductPackaging "/Users/jonpacker/Library/MobileDevice/Provisioning Profiles/ACB5B112-909E-44C0-B6CC-7936980111A8.mobileprovision" /Users/jonpacker/Documents/Dev/TromsoNow/build/Debug-iphoneos/TromsoNow.app/embedded.mobileprovision
-cProcessProductPackaging /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/Entitlements.plist /Users/jonpacker/Documents/Dev/TromsoNow/build/TromsoNow.build/Debug-iphoneos/TromsoNow.build/TromsoNow.xcent
-
-N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk
-c000000004CC7DC9E0000000000000110
-t1288166558
-s272
-
-N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/Entitlements.plist
-c000000004CB3DFCF00000000000001A7
-t1286856655
-s423
-
-N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/ResourceRules.plist
-c000000004CB3DFCF00000000000001E5
-t1286856655
-s485
-
-N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-c000000004CC10EF500000000003532B0
-t1287720693
-s3486384
-
-N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/Foundation.framework/Foundation
-c000000004CC10F4700000000003E1F20
-t1287720775
-s4071200
-
-N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
-c000000004CC10F1C0000000000001466
-t1287720732
-s5222
-
-N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
-c000000004CC11AE60000000000000AA1
-t1287723750
-s2721
-
-N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/UIKit.framework/UIKit
-c000000004CC11B750000000000C769F0
-t1287723893
-s13068784
-
-N/Users/jonpacker/Documents/Dev/TromsoNow/Assetts/bar.png
-c000000004CFE2F440000000000026C48
-t1291726660
-s158792
-
-N/Users/jonpacker/Documents/Dev/TromsoNow/Assetts/bar2.png
-c000000004D6CEE7300000000000236EF
-t1298984563
-s145135
-
-N/Users/jonpacker/Documents/Dev/TromsoNow/Assetts/concept.png
-c000000004CFE2AD20000000000008CC8
-t1291725522
-s36040
-
-N/Users/jonpacker/Documents/Dev/TromsoNow/Assetts/displayWeatherData.png
-c000000004CFE27D500000000000012AE
-t1291724757
-s4782
-
-N/Users/jonpacker/Documents/Dev/TromsoNow/Assetts/til.jpg
-c000000004D6CD6EB000000000002A9AD
-t1298978539
-s174509
-
-N/Users/jonpacker/Documents/Dev/TromsoNow/Assetts/til90.jpg
-c000000004D6CD7B5000000000002AF4A
-t1298978741
-s175946
-
-N/Users/jonpacker/Documents/Dev/TromsoNow/Classes/StatBarView.h
-c000000004D6659CA0000000000000255
-t1298553290
-s597
-i<UIKit/UIKit.h>
-i"WeatherDataBar.h"
-
-N/Users/jonpacker/Documents/Dev/TromsoNow/Classes/StatBarView.m
-c000000004D6CD8B80000000000000ABB
-t1298979000
-s2747
-i"StatBarView.h"
-
-N/Users/jonpacker/Documents/Dev/TromsoNow/Classes/TromsoNowAppDelegate.h
-c000000004CEF680400000000000001EE
-t1290758148
-s494
-i<UIKit/UIKit.h>
-
-N/Users/jonpacker/Documents/Dev/TromsoNow/Classes/TromsoNowAppDelegate.m
-c000000004CEF680400000000000007C1
-t1290758148
-s1985
-i"TromsoNowAppDelegate.h"
-i"TromsoNowViewController.h"
-
-N/Users/jonpacker/Documents/Dev/TromsoNow/Classes/TromsoNowViewController.h
-c000000004D6CE3C700000000000003B7
-t1298981831
-s951
-i<UIKit/UIKit.h>
-i"UiTDataProvider.h"
-i"WeatherDataLayer.h"
-i"StatBarView.h"
-
-N/Users/jonpacker/Documents/Dev/TromsoNow/Classes/TromsoNowViewController.m
-c000000004D6CE7310000000000000D9A
-t1298982705
-s3482
-i"TromsoNowViewController.h"
-
-N/Users/jonpacker/Documents/Dev/TromsoNow/Classes/UiTDataProvider.h
-c000000004D6CE7E80000000000000252
-t1298982888
-s594
-i<Foundation/Foundation.h>
-i"WeatherDataLayer.h"
-i"WeatherDataEntity.h"
-
-N/Users/jonpacker/Documents/Dev/TromsoNow/Classes/UiTDataProvider.m
-c000000004D6CEC650000000000000AAF
-t1298984037
-s2735
-i"UiTDataProvider.h"
-
-N/Users/jonpacker/Documents/Dev/TromsoNow/Classes/WeatherDataBar.h
-c000000004D6F7ED300000000000001C6
-t1299152595
-s454
-i<UIKit/UIKit.h>
-i"WeatherDataLayer.h"
-i"WeatherDataEntityView.h"
-
-N/Users/jonpacker/Documents/Dev/TromsoNow/Classes/WeatherDataBar.m
-c000000004D6F7FE90000000000000C31
-t1299152873
-s3121
-i"WeatherDataBar.h"
-i"UiTDataProvider.h"
-
-N/Users/jonpacker/Documents/Dev/TromsoNow/Classes/WeatherDataEntity.h
-c000000004D3F8DAF0000000000000214
-t1296010671
-s532
-i<Foundation/Foundation.h>
-
-N/Users/jonpacker/Documents/Dev/TromsoNow/Classes/WeatherDataEntity.m
-c000000004D3FE4BB0000000000000244
-t1296032955
-s580
-i"WeatherDataEntity.h"
-
-N/Users/jonpacker/Documents/Dev/TromsoNow/Classes/WeatherDataEntityView.h
-c000000004D3F91220000000000000275
-t1296011554
-s629
-i<UIKit/UIKit.h>
-i"WeatherDataEntity.h"
-
-N/Users/jonpacker/Documents/Dev/TromsoNow/Classes/WeatherDataEntityView.m
-c000000004D6F771E0000000000000B37
-t1299150622
-s2871
-i"WeatherDataEntityView.h"
-
-N/Users/jonpacker/Documents/Dev/TromsoNow/Classes/WeatherDataLayer.h
-c000000004CFB517700000000000001D2
-t1291538807
-s466
-i<Foundation/Foundation.h>
-
-N/Users/jonpacker/Documents/Dev/TromsoNow/Classes/WeatherDataLayer.m
-c000000004CFE1A1500000000000001D0
-t1291721237
-s464
-i"WeatherDataLayer.h"
-
-N/Users/jonpacker/Documents/Dev/TromsoNow/MainWindow.xib
-c000000004CEF68040000000000004D1D
-t1290758148
-s19741
-
-N/Users/jonpacker/Documents/Dev/TromsoNow/TromsoNowViewController.xib
-c000000004D6CE76A00000000000052FF
-t1298982762
-s21247
-
-N/Users/jonpacker/Documents/Dev/TromsoNow/TromsoNow_Prefix.pch
-c000000004CEF680400000000000000BB
-t1290758148
-s187
-i<Foundation/Foundation.h>
-i<UIKit/UIKit.h>
-
-N/Users/jonpacker/Documents/Dev/TromsoNow/build/Debug-iphoneos/TromsoNow.app
-t1299049324
-s612
-
-N/Users/jonpacker/Documents/Dev/TromsoNow/build/Debug-iphoneos/TromsoNow.app.dSYM
-t1298985593
-s102
-
-N/Users/jonpacker/Documents/Dev/TromsoNow/build/Debug-iphoneos/TromsoNow.app/Info.plist
-t1298985583
-s1145
-
-N/Users/jonpacker/Documents/Dev/TromsoNow/build/Debug-iphoneos/TromsoNow.app/MainWindow.nib
-t1291726825
-s1127
-
-N/Users/jonpacker/Documents/Dev/TromsoNow/build/Debug-iphoneos/TromsoNow.app/PkgInfo
-t1298985583
-s8
-
-N/Users/jonpacker/Documents/Dev/TromsoNow/build/Debug-iphoneos/TromsoNow.app/ResourceRules.plist
-t1291726816
-s485
-
-N/Users/jonpacker/Documents/Dev/TromsoNow/build/Debug-iphoneos/TromsoNow.app/TromsoNow
-t1298985593
-s61536
-
-N/Users/jonpacker/Documents/Dev/TromsoNow/build/Debug-iphoneos/TromsoNow.app/TromsoNowViewController.nib
-t1298985590
-s1286
-
-N/Users/jonpacker/Documents/Dev/TromsoNow/build/Debug-iphoneos/TromsoNow.app/bar.png
-t1291726819
-s147888
-
-N/Users/jonpacker/Documents/Dev/TromsoNow/build/Debug-iphoneos/TromsoNow.app/bar2.png
-t1298985589
-s144146
-
-N/Users/jonpacker/Documents/Dev/TromsoNow/build/Debug-iphoneos/TromsoNow.app/concept.png
-t1291726819
-s37436
-
-N/Users/jonpacker/Documents/Dev/TromsoNow/build/Debug-iphoneos/TromsoNow.app/displayWeatherData.png
-t1291726819
-s5149
-
-N/Users/jonpacker/Documents/Dev/TromsoNow/build/Debug-iphoneos/TromsoNow.app/embedded.mobileprovision
-t1298978637
-s9574
-
-N/Users/jonpacker/Documents/Dev/TromsoNow/build/Debug-iphoneos/TromsoNow.app/til.jpg
-t1298978637
-s174509
-
-N/Users/jonpacker/Documents/Dev/TromsoNow/build/Debug-iphoneos/TromsoNow.app/til90.jpg
-t1298985584
-s175946
-
-N/Users/jonpacker/Documents/Dev/TromsoNow/build/Debug-iphoneos/TromsoNow.app/uit.png
-t1291726819
-s12612
-
-N/Users/jonpacker/Documents/Dev/TromsoNow/build/TromsoNow.build/Debug-iphoneos/TromsoNow.build/Objects-normal/armv7/StatBarView.o
-t2
-s0
-
-N/Users/jonpacker/Documents/Dev/TromsoNow/build/TromsoNow.build/Debug-iphoneos/TromsoNow.build/Objects-normal/armv7/TromsoNow.LinkFileList
-c000000004D3FE7E900000000000004B3
-t1296033769
-s1203
-
-N/Users/jonpacker/Documents/Dev/TromsoNow/build/TromsoNow.build/Debug-iphoneos/TromsoNow.build/Objects-normal/armv7/TromsoNowAppDelegate.o
-t1299152899
-s50308
-
-N/Users/jonpacker/Documents/Dev/TromsoNow/build/TromsoNow.build/Debug-iphoneos/TromsoNow.build/Objects-normal/armv7/TromsoNowViewController.o
-t1299152899
-s50784
-
-N/Users/jonpacker/Documents/Dev/TromsoNow/build/TromsoNow.build/Debug-iphoneos/TromsoNow.build/Objects-normal/armv7/UiTDataProvider.o
-t1298985592
-s20176
-
-N/Users/jonpacker/Documents/Dev/TromsoNow/build/TromsoNow.build/Debug-iphoneos/TromsoNow.build/Objects-normal/armv7/WeatherDataBar.o
-t2
-s0
-
-N/Users/jonpacker/Documents/Dev/TromsoNow/build/TromsoNow.build/Debug-iphoneos/TromsoNow.build/Objects-normal/armv7/WeatherDataEntity.o
-t1298559242
-s10912
-
-N/Users/jonpacker/Documents/Dev/TromsoNow/build/TromsoNow.build/Debug-iphoneos/TromsoNow.build/Objects-normal/armv7/WeatherDataEntityView.o
-t1299152899
-s48568
-
-N/Users/jonpacker/Documents/Dev/TromsoNow/build/TromsoNow.build/Debug-iphoneos/TromsoNow.build/Objects-normal/armv7/WeatherDataLayer.o
-t1298559241
-s8300
-
-N/Users/jonpacker/Documents/Dev/TromsoNow/build/TromsoNow.build/Debug-iphoneos/TromsoNow.build/Objects-normal/armv7/main.o
-t1298559241
-s6436
-
-N/Users/jonpacker/Documents/Dev/TromsoNow/build/TromsoNow.build/Debug-iphoneos/TromsoNow.build/TromsoNow.xcent
-t1298985594
-s424
-
-N/Users/jonpacker/Documents/Dev/TromsoNow/main.m
-c000000004CEF6804000000000000016E
-t1290758148
-s366
-i<UIKit/UIKit.h>
-
-N/Users/jonpacker/Documents/Dev/TromsoNow/uit.png
-c000000004CEF76980000000000002AA8
-t1290761880
-s10920
-
-N/Users/jonpacker/Library/MobileDevice/Provisioning Profiles/20438F21-93A7-4B1A-A936-E5BE2B77C8E1.mobileprovision
-c000000004D12B5210000000000001D20
-t1293071649
-s7456
-
-N/Users/jonpacker/Library/MobileDevice/Provisioning Profiles/7B468C40-3E6C-4F03-B3D0-61AEEB07F5E6.mobileprovision
-c000000004CF2EC970000000000001CD4
-t1290988695
-s7380
-
-N/Users/jonpacker/Library/MobileDevice/Provisioning Profiles/ACB5B112-909E-44C0-B6CC-7936980111A8.mobileprovision
-c000000004D645C5B0000000000002566
-t1298422875
-s9574
-
-N/Users/jonpacker/Library/MobileDevice/Provisioning Profiles/C9C086D9-FD60-4DC6-8536-077A2BA9C07E.mobileprovision
-c000000004CF71F5C0000000000001CE4
-t1291263836
-s7396
-
-N/var/folders/Hn/Hn9GUMEKECmBpGvXcLoGVU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TromsoNow_Prefix-ffpawconjevyyyeargkbiwvqiylx/TromsoNow_Prefix.pch.gch
-t1298559239
-s10446552
-
-NTromsoNow-Info.plist
-c000000004D6CD7C70000000000000593
-t1298978759
-s1427
-
-CCheck dependencies
-r0
-lSLF07#2@18"Check dependencies320845699#320845699#0(0"0(0#1#0"8641727008#0"0#
-
-CCodeSign /Users/jonpacker/Documents/Dev/TromsoNow/build/Debug-iphoneos/TromsoNow.app
-s320742117.713160
-e320742124.582893
-r1
-xCodeSign
-x/Users/jonpacker/Documents/Dev/TromsoNow/build/Debug-iphoneos/TromsoNow.app
-o/Users/jonpacker/Documents/Dev/TromsoNow/build/Debug-iphoneos/TromsoNow.app: replacing existing signature
-lSLF07#2@43"CodeSign build/Debug-iphoneos/TromsoNow.app320742117#320742124#0(106"/Users/jonpacker/Documents/Dev/TromsoNow/build/Debug-iphoneos/TromsoNow.app: replacing existing signature0(0#0#75"/Users/jonpacker/Documents/Dev/TromsoNow/build/Debug-iphoneos/TromsoNow.app8631401952#669"    cd /Users/jonpacker/Documents/Dev/TromsoNow    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    setenv _CODESIGN_ALLOCATE_ /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/codesign_allocate    /usr/bin/codesign -f -s "iPhone Developer: Jonathan Packer (9DP8EB4TA6)" --resource-rules=/Users/jonpacker/Documents/Dev/TromsoNow/build/Debug-iphoneos/TromsoNow.app/ResourceRules.plist --entitlements /Users/jonpacker/Documents/Dev/TromsoNow/build/TromsoNow.build/Debug-iphoneos/TromsoNow.build/TromsoNow.xcent /Users/jonpacker/Documents/Dev/TromsoNow/build/Debug-iphoneos/TromsoNow.app0#
-
-CCompileC build/TromsoNow.build/Debug-iphoneos/TromsoNow.build/Objects-normal/armv7/StatBarView.o /Users/jonpacker/Documents/Dev/TromsoNow/Classes/StatBarView.m normal armv7 objective-c com.apple.compilers.gcc.4_2
-s320845699.655520
-e320845699.808584
-r0
-xCompileC
-xbuild/TromsoNow.build/Debug-iphoneos/TromsoNow.build/Objects-normal/armv7/StatBarView.o
-x/Users/jonpacker/Documents/Dev/TromsoNow/Classes/StatBarView.m
-xnormal
-xarmv7
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-oIn file included from /Users/jonpacker/Documents/Dev/TromsoNow/Classes/StatBarView.h:10,
-o                 from /Users/jonpacker/Documents/Dev/TromsoNow/Classes/StatBarView.m:9:
-o/Users/jonpacker/Documents/Dev/TromsoNow/Classes/WeatherDataBar.h:18: error: expected specifier-qualifier-list before 'UiTDataProvider'
-lSLF07#2@70"Compile /Users/jonpacker/Documents/Dev/TromsoNow/Classes/StatBarView.m320845699#320845699#0(313"In file included from /Users/jonpacker/Documents/Dev/TromsoNow/Classes/StatBarView.h:10,                 from /Users/jonpacker/Documents/Dev/TromsoNow/Classes/StatBarView.m:9:/Users/jonpacker/Documents/Dev/TromsoNow/Classes/WeatherDataBar.h:18: error: expected specifier-qualifier-list before 'UiTDataProvider'1(4@58"Expected specifier-qualifier-list before 'UiTDataProvider'320845699#177#136#3(7@84"In file included from /Users/jonpacker/Documents/Dev/TromsoNow/Classes/StatBarView.m320845699#18446744073709551615#0#0(6@62"/Users/jonpacker/Documents/Dev/TromsoNow/Classes/StatBarView.m320671800#9#0#9#0#0"0(7@84"In file included from /Users/jonpacker/Documents/Dev/TromsoNow/Classes/StatBarView.h320845699#18446744073709551615#0#0(6@62"/Users/jonpacker/Documents/Dev/TromsoNow/Classes/StatBarView.h320246090#10#0#10#0#0"0(13@127"Expected specifier-qualifier-list before 'UiTDataProvider' in /Users/jonpacker/Documents/Dev/TromsoNow/Classes/WeatherDataBar.h320845699#18446744073709551615#0#0(6@65"/Users/jonpacker/Documents/Dev/TromsoNow/Classes/WeatherDataBar.h320845395#18#0#18#0#0"0(6@65"/Users/jonpacker/Documents/Dev/TromsoNow/Classes/WeatherDataBar.h320845395#18#0#18#0#19"expected * before *0(0#0#62"/Users/jonpacker/Documents/Dev/TromsoNow/Classes/StatBarView.m8636038496#1808"    cd /Users/jonpacker/Documents/Dev/TromsoNow    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/jonpacker/Documents/Dev/TromsoNow/build/TromsoNow.build/Debug-iphoneos/TromsoNow.build/TromsoNow-generated-files.hmap -I/Users/jonpacker/Documents/Dev/TromsoNow/build/TromsoNow.build/Debug-iphoneos/TromsoNow.build/TromsoNow-own-target-headers.hmap -I/Users/jonpacker/Documents/Dev/TromsoNow/build/TromsoNow.build/Debug-iphoneos/TromsoNow.build/TromsoNow-all-target-headers.hmap -iquote /Users/jonpacker/Documents/Dev/TromsoNow/build/TromsoNow.build/Debug-iphoneos/TromsoNow.build/TromsoNow-project-headers.hmap -F/Users/jonpacker/Documents/Dev/TromsoNow/build/Debug-iphoneos -I/Users/jonpacker/Documents/Dev/TromsoNow/build/Debug-iphoneos/include -I/Users/jonpacker/Documents/Dev/TromsoNow/build/TromsoNow.build/Debug-iphoneos/TromsoNow.build/DerivedSources/armv7 -I/Users/jonpacker/Documents/Dev/TromsoNow/build/TromsoNow.build/Debug-iphoneos/TromsoNow.build/DerivedSources -include /var/folders/Hn/Hn9GUMEKECmBpGvXcLoGVU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TromsoNow_Prefix-ffpawconjevyyyeargkbiwvqiylx/TromsoNow_Prefix.pch -c /Users/jonpacker/Documents/Dev/TromsoNow/Classes/StatBarView.m -o /Users/jonpacker/Documents/Dev/TromsoNow/build/TromsoNow.build/Debug-iphoneos/TromsoNow.build/Objects-normal/armv7/StatBarView.o1#
-
-CCompileC build/TromsoNow.build/Debug-iphoneos/TromsoNow.build/Objects-normal/armv7/TromsoNowAppDelegate.o /Users/jonpacker/Documents/Dev/TromsoNow/Classes/TromsoNowAppDelegate.m normal armv7 objective-c com.apple.compilers.gcc.4_2
-s320845699.575438
-e320845699.942878
-r1
-xCompileC
-xbuild/TromsoNow.build/Debug-iphoneos/TromsoNow.build/Objects-normal/armv7/TromsoNowAppDelegate.o
-x/Users/jonpacker/Documents/Dev/TromsoNow/Classes/TromsoNowAppDelegate.m
-xnormal
-xarmv7
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@79"Compile /Users/jonpacker/Documents/Dev/TromsoNow/Classes/TromsoNowAppDelegate.m320845699#320845699#0(0"0(0#0#71"/Users/jonpacker/Documents/Dev/TromsoNow/Classes/TromsoNowAppDelegate.m8639501536#1826"    cd /Users/jonpacker/Documents/Dev/TromsoNow    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/jonpacker/Documents/Dev/TromsoNow/build/TromsoNow.build/Debug-iphoneos/TromsoNow.build/TromsoNow-generated-files.hmap -I/Users/jonpacker/Documents/Dev/TromsoNow/build/TromsoNow.build/Debug-iphoneos/TromsoNow.build/TromsoNow-own-target-headers.hmap -I/Users/jonpacker/Documents/Dev/TromsoNow/build/TromsoNow.build/Debug-iphoneos/TromsoNow.build/TromsoNow-all-target-headers.hmap -iquote /Users/jonpacker/Documents/Dev/TromsoNow/build/TromsoNow.build/Debug-iphoneos/TromsoNow.build/TromsoNow-project-headers.hmap -F/Users/jonpacker/Documents/Dev/TromsoNow/build/Debug-iphoneos -I/Users/jonpacker/Documents/Dev/TromsoNow/build/Debug-iphoneos/include -I/Users/jonpacker/Documents/Dev/TromsoNow/build/TromsoNow.build/Debug-iphoneos/TromsoNow.build/DerivedSources/armv7 -I/Users/jonpacker/Documents/Dev/TromsoNow/build/TromsoNow.build/Debug-iphoneos/TromsoNow.build/DerivedSources -include /var/folders/Hn/Hn9GUMEKECmBpGvXcLoGVU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TromsoNow_Prefix-ffpawconjevyyyeargkbiwvqiylx/TromsoNow_Prefix.pch -c /Users/jonpacker/Documents/Dev/TromsoNow/Classes/TromsoNowAppDelegate.m -o /Users/jonpacker/Documents/Dev/TromsoNow/build/TromsoNow.build/Debug-iphoneos/TromsoNow.build/Objects-normal/armv7/TromsoNowAppDelegate.o0#
-
-CCompileC build/TromsoNow.build/Debug-iphoneos/TromsoNow.build/Objects-normal/armv7/TromsoNowViewController.o /Users/jonpacker/Documents/Dev/TromsoNow/Classes/TromsoNowViewController.m normal armv7 objective-c com.apple.compilers.gcc.4_2
-s320845699.634264
-e320845699.943231
-r1
-xCompileC
-xbuild/TromsoNow.build/Debug-iphoneos/TromsoNow.build/Objects-normal/armv7/TromsoNowViewController.o
-x/Users/jonpacker/Documents/Dev/TromsoNow/Classes/TromsoNowViewController.m
-xnormal
-xarmv7
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@82"Compile /Users/jonpacker/Documents/Dev/TromsoNow/Classes/TromsoNowViewController.m320845699#320845699#0(0"0(0#0#74"/Users/jonpacker/Documents/Dev/TromsoNow/Classes/TromsoNowViewController.m8642153696#1832"    cd /Users/jonpacker/Documents/Dev/TromsoNow    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/jonpacker/Documents/Dev/TromsoNow/build/TromsoNow.build/Debug-iphoneos/TromsoNow.build/TromsoNow-generated-files.hmap -I/Users/jonpacker/Documents/Dev/TromsoNow/build/TromsoNow.build/Debug-iphoneos/TromsoNow.build/TromsoNow-own-target-headers.hmap -I/Users/jonpacker/Documents/Dev/TromsoNow/build/TromsoNow.build/Debug-iphoneos/TromsoNow.build/TromsoNow-all-target-headers.hmap -iquote /Users/jonpacker/Documents/Dev/TromsoNow/build/TromsoNow.build/Debug-iphoneos/TromsoNow.build/TromsoNow-project-headers.hmap -F/Users/jonpacker/Documents/Dev/TromsoNow/build/Debug-iphoneos -I/Users/jonpacker/Documents/Dev/TromsoNow/build/Debug-iphoneos/include -I/Users/jonpacker/Documents/Dev/TromsoNow/build/TromsoNow.build/Debug-iphoneos/TromsoNow.build/DerivedSources/armv7 -I/Users/jonpacker/Documents/Dev/TromsoNow/build/TromsoNow.build/Debug-iphoneos/TromsoNow.build/DerivedSources -include /var/folders/Hn/Hn9GUMEKECmBpGvXcLoGVU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TromsoNow_Prefix-ffpawconjevyyyeargkbiwvqiylx/TromsoNow_Prefix.pch -c /Users/jonpacker/Documents/Dev/TromsoNow/Classes/TromsoNowViewController.m -o /Users/jonpacker/Documents/Dev/TromsoNow/build/TromsoNow.build/Debug-iphoneos/TromsoNow.build/Objects-normal/armv7/TromsoNowViewController.o0#
-
-CCompileC build/TromsoNow.build/Debug-iphoneos/TromsoNow.build/Objects-normal/armv7/UiTDataProvider.o /Users/jonpacker/Documents/Dev/TromsoNow/Classes/UiTDataProvider.m normal armv7 objective-c com.apple.compilers.gcc.4_2
-s320678390.144897
-e320678392.661294
-r1
-xCompileC
-xbuild/TromsoNow.build/Debug-iphoneos/TromsoNow.build/Objects-normal/armv7/UiTDataProvider.o
-x/Users/jonpacker/Documents/Dev/TromsoNow/Classes/UiTDataProvider.m
-xnormal
-xarmv7
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@74"Compile /Users/jonpacker/Documents/Dev/TromsoNow/Classes/UiTDataProvider.m320678390#320678392#0(0"0(0#0#66"/Users/jonpacker/Documents/Dev/TromsoNow/Classes/UiTDataProvider.m8619563296#1816"    cd /Users/jonpacker/Documents/Dev/TromsoNow    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/jonpacker/Documents/Dev/TromsoNow/build/TromsoNow.build/Debug-iphoneos/TromsoNow.build/TromsoNow-generated-files.hmap -I/Users/jonpacker/Documents/Dev/TromsoNow/build/TromsoNow.build/Debug-iphoneos/TromsoNow.build/TromsoNow-own-target-headers.hmap -I/Users/jonpacker/Documents/Dev/TromsoNow/build/TromsoNow.build/Debug-iphoneos/TromsoNow.build/TromsoNow-all-target-headers.hmap -iquote /Users/jonpacker/Documents/Dev/TromsoNow/build/TromsoNow.build/Debug-iphoneos/TromsoNow.build/TromsoNow-project-headers.hmap -F/Users/jonpacker/Documents/Dev/TromsoNow/build/Debug-iphoneos -I/Users/jonpacker/Documents/Dev/TromsoNow/build/Debug-iphoneos/include -I/Users/jonpacker/Documents/Dev/TromsoNow/build/TromsoNow.build/Debug-iphoneos/TromsoNow.build/DerivedSources/armv7 -I/Users/jonpacker/Documents/Dev/TromsoNow/build/TromsoNow.build/Debug-iphoneos/TromsoNow.build/DerivedSources -include /var/folders/Hn/Hn9GUMEKECmBpGvXcLoGVU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TromsoNow_Prefix-ffpawconjevyyyeargkbiwvqiylx/TromsoNow_Prefix.pch -c /Users/jonpacker/Documents/Dev/TromsoNow/Classes/UiTDataProvider.m -o /Users/jonpacker/Documents/Dev/TromsoNow/build/TromsoNow.build/Debug-iphoneos/TromsoNow.build/Objects-normal/armv7/UiTDataProvider.o0#
-
-CCompileC build/TromsoNow.build/Debug-iphoneos/TromsoNow.build/Objects-normal/armv7/WeatherDataBar.o /Users/jonpacker/Documents/Dev/TromsoNow/Classes/WeatherDataBar.m normal armv7 objective-c com.apple.compilers.gcc.4_2
-s320845699.656683
-e320845699.954458
-r0
-xCompileC
-xbuild/TromsoNow.build/Debug-iphoneos/TromsoNow.build/Objects-normal/armv7/WeatherDataBar.o
-x/Users/jonpacker/Documents/Dev/TromsoNow/Classes/WeatherDataBar.m
-xnormal
-xarmv7
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-oIn file included from /Users/jonpacker/Documents/Dev/TromsoNow/Classes/WeatherDataBar.m:9:
-o/Users/jonpacker/Documents/Dev/TromsoNow/Classes/WeatherDataBar.h:18: error: expected specifier-qualifier-list before 'UiTDataProvider'
-o/Users/jonpacker/Documents/Dev/TromsoNow/Classes/WeatherDataBar.m: In function '-[InterceptingScrollView touchesEnded:withEvent:]':
-o/Users/jonpacker/Documents/Dev/TromsoNow/Classes/WeatherDataBar.m:31: warning: 'UIView' may not respond to '-setShowing:'
-o/Users/jonpacker/Documents/Dev/TromsoNow/Classes/WeatherDataBar.m:31: warning: (Messages without a matching method signature
-o/Users/jonpacker/Documents/Dev/TromsoNow/Classes/WeatherDataBar.m:31: warning: will be assumed to return 'id' and accept
-o/Users/jonpacker/Documents/Dev/TromsoNow/Classes/WeatherDataBar.m:31: warning: '...' as arguments.)
-o/Users/jonpacker/Documents/Dev/TromsoNow/Classes/WeatherDataBar.m: At top level:
-o/Users/jonpacker/Documents/Dev/TromsoNow/Classes/WeatherDataBar.m:41: error: expected ';' before 'end'
-o/Users/jonpacker/Documents/Dev/TromsoNow/Classes/WeatherDataBar.m:46: error: expected ';' before '{' token
-lSLF07#2@73"Compile /Users/jonpacker/Documents/Dev/TromsoNow/Classes/WeatherDataBar.m320845699#320845700#0(1118"In file included from /Users/jonpacker/Documents/Dev/TromsoNow/Classes/WeatherDataBar.m:9:/Users/jonpacker/Documents/Dev/TromsoNow/Classes/WeatherDataBar.h:18: error: expected specifier-qualifier-list before 'UiTDataProvider'/Users/jonpacker/Documents/Dev/TromsoNow/Classes/WeatherDataBar.m: In function '-[InterceptingScrollView touchesEnded:withEvent:]':/Users/jonpacker/Documents/Dev/TromsoNow/Classes/WeatherDataBar.m:31: warning: 'UIView' may not respond to '-setShowing:'/Users/jonpacker/Documents/Dev/TromsoNow/Classes/WeatherDataBar.m:31: warning: (Messages without a matching method signature/Users/jonpacker/Documents/Dev/TromsoNow/Classes/WeatherDataBar.m:31: warning: will be assumed to return 'id' and accept/Users/jonpacker/Documents/Dev/TromsoNow/Classes/WeatherDataBar.m:31: warning: '...' as arguments.)/Users/jonpacker/Documents/Dev/TromsoNow/Classes/WeatherDataBar.m: At top level:/Users/jonpacker/Documents/Dev/TromsoNow/Classes/WeatherDataBar.m:41: error: expected ';' before 'end'/Users/jonpacker/Documents/Dev/TromsoNow/Classes/WeatherDataBar.m:46: error: expected ';' before '{' token6(4@58"Expected specifier-qualifier-list before 'UiTDataProvider'320845699#91#136#2(7@87"In file included from /Users/jonpacker/Documents/Dev/TromsoNow/Classes/WeatherDataBar.m320845699#18446744073709551615#0#0(6@65"/Users/jonpacker/Documents/Dev/TromsoNow/Classes/WeatherDataBar.m320845673#9#0#9#0#0"0(13@127"Expected specifier-qualifier-list before 'UiTDataProvider' in /Users/jonpacker/Documents/Dev/TromsoNow/Classes/WeatherDataBar.h320845699#18446744073709551615#0#0(6@65"/Users/jonpacker/Documents/Dev/TromsoNow/Classes/WeatherDataBar.h320845395#18#0#18#0#0"0(6@65"/Users/jonpacker/Documents/Dev/TromsoNow/Classes/WeatherDataBar.h320845395#18#0#18#0#19"expected * before *0(22@42"'UIView' may not respond to '-setShowing:'320845699#359#122#0(6@65"/Users/jonpacker/Documents/Dev/TromsoNow/Classes/WeatherDataBar.m320845673#31#0#31#0#26"'*' may not respond to '*'0(13@108"(Messages without a matching method signature will be assumed to return 'id' and accept '...' as arguments.)320845699#481#125#0(6@65"/Users/jonpacker/Documents/Dev/TromsoNow/Classes/WeatherDataBar.m320845673#31#0#31#0#0"0(23@13"At top level:320845699#827#81#0(6@65"/Users/jonpacker/Documents/Dev/TromsoNow/Classes/WeatherDataBar.m320845673#0#0#0#0#0"0(4@25"Expected ';' before 'end'320845699#908#103#0(6@65"/Users/jonpacker/Documents/Dev/TromsoNow/Classes/WeatherDataBar.m320845673#41#0#41#0#19"expected * before *0(4@29"Expected ';' before '{' token320845699#1011#107#0(6@65"/Users/jonpacker/Documents/Dev/TromsoNow/Classes/WeatherDataBar.m320845673#46#0#46#0#19"expected * before *0(0#0#65"/Users/jonpacker/Documents/Dev/TromsoNow/Classes/WeatherDataBar.m8634347392#1814"    cd /Users/jonpacker/Documents/Dev/TromsoNow    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/jonpacker/Documents/Dev/TromsoNow/build/TromsoNow.build/Debug-iphoneos/TromsoNow.build/TromsoNow-generated-files.hmap -I/Users/jonpacker/Documents/Dev/TromsoNow/build/TromsoNow.build/Debug-iphoneos/TromsoNow.build/TromsoNow-own-target-headers.hmap -I/Users/jonpacker/Documents/Dev/TromsoNow/build/TromsoNow.build/Debug-iphoneos/TromsoNow.build/TromsoNow-all-target-headers.hmap -iquote /Users/jonpacker/Documents/Dev/TromsoNow/build/TromsoNow.build/Debug-iphoneos/TromsoNow.build/TromsoNow-project-headers.hmap -F/Users/jonpacker/Documents/Dev/TromsoNow/build/Debug-iphoneos -I/Users/jonpacker/Documents/Dev/TromsoNow/build/Debug-iphoneos/include -I/Users/jonpacker/Documents/Dev/TromsoNow/build/TromsoNow.build/Debug-iphoneos/TromsoNow.build/DerivedSources/armv7 -I/Users/jonpacker/Documents/Dev/TromsoNow/build/TromsoNow.build/Debug-iphoneos/TromsoNow.build/DerivedSources -include /var/folders/Hn/Hn9GUMEKECmBpGvXcLoGVU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TromsoNow_Prefix-ffpawconjevyyyeargkbiwvqiylx/TromsoNow_Prefix.pch -c /Users/jonpacker/Documents/Dev/TromsoNow/Classes/WeatherDataBar.m -o /Users/jonpacker/Documents/Dev/TromsoNow/build/TromsoNow.build/Debug-iphoneos/TromsoNow.build/Objects-normal/armv7/WeatherDataBar.o1#
-
-CCompileC build/TromsoNow.build/Debug-iphoneos/TromsoNow.build/Objects-normal/armv7/WeatherDataEntity.o /Users/jonpacker/Documents/Dev/TromsoNow/Classes/WeatherDataEntity.m normal armv7 objective-c com.apple.compilers.gcc.4_2
-s320252042.135746
-e320252042.286934
-r1
-xCompileC
-xbuild/TromsoNow.build/Debug-iphoneos/TromsoNow.build/Objects-normal/armv7/WeatherDataEntity.o
-x/Users/jonpacker/Documents/Dev/TromsoNow/Classes/WeatherDataEntity.m
-xnormal
-xarmv7
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@76"Compile /Users/jonpacker/Documents/Dev/TromsoNow/Classes/WeatherDataEntity.m320252042#320252042#0(0"0(0#0#68"/Users/jonpacker/Documents/Dev/TromsoNow/Classes/WeatherDataEntity.m8681828288#1820"    cd /Users/jonpacker/Documents/Dev/TromsoNow    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/jonpacker/Documents/Dev/TromsoNow/build/TromsoNow.build/Debug-iphoneos/TromsoNow.build/TromsoNow-generated-files.hmap -I/Users/jonpacker/Documents/Dev/TromsoNow/build/TromsoNow.build/Debug-iphoneos/TromsoNow.build/TromsoNow-own-target-headers.hmap -I/Users/jonpacker/Documents/Dev/TromsoNow/build/TromsoNow.build/Debug-iphoneos/TromsoNow.build/TromsoNow-all-target-headers.hmap -iquote /Users/jonpacker/Documents/Dev/TromsoNow/build/TromsoNow.build/Debug-iphoneos/TromsoNow.build/TromsoNow-project-headers.hmap -F/Users/jonpacker/Documents/Dev/TromsoNow/build/Debug-iphoneos -I/Users/jonpacker/Documents/Dev/TromsoNow/build/Debug-iphoneos/include -I/Users/jonpacker/Documents/Dev/TromsoNow/build/TromsoNow.build/Debug-iphoneos/TromsoNow.build/DerivedSources/armv7 -I/Users/jonpacker/Documents/Dev/TromsoNow/build/TromsoNow.build/Debug-iphoneos/TromsoNow.build/DerivedSources -include /var/folders/Hn/Hn9GUMEKECmBpGvXcLoGVU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TromsoNow_Prefix-ffpawconjevyyyeargkbiwvqiylx/TromsoNow_Prefix.pch -c /Users/jonpacker/Documents/Dev/TromsoNow/Classes/WeatherDataEntity.m -o /Users/jonpacker/Documents/Dev/TromsoNow/build/TromsoNow.build/Debug-iphoneos/TromsoNow.build/Objects-normal/armv7/WeatherDataEntity.o0#
-
-CCompileC build/TromsoNow.build/Debug-iphoneos/TromsoNow.build/Objects-normal/armv7/WeatherDataEntityView.o /Users/jonpacker/Documents/Dev/TromsoNow/Classes/WeatherDataEntityView.m normal armv7 objective-c com.apple.compilers.gcc.4_2
-s320845699.808694
-e320845699.995405
-r1
-xCompileC
-xbuild/TromsoNow.build/Debug-iphoneos/TromsoNow.build/Objects-normal/armv7/WeatherDataEntityView.o
-x/Users/jonpacker/Documents/Dev/TromsoNow/Classes/WeatherDataEntityView.m
-xnormal
-xarmv7
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@80"Compile /Users/jonpacker/Documents/Dev/TromsoNow/Classes/WeatherDataEntityView.m320845699#320845700#0(0"0(0#0#72"/Users/jonpacker/Documents/Dev/TromsoNow/Classes/WeatherDataEntityView.m8646334976#1828"    cd /Users/jonpacker/Documents/Dev/TromsoNow    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/jonpacker/Documents/Dev/TromsoNow/build/TromsoNow.build/Debug-iphoneos/TromsoNow.build/TromsoNow-generated-files.hmap -I/Users/jonpacker/Documents/Dev/TromsoNow/build/TromsoNow.build/Debug-iphoneos/TromsoNow.build/TromsoNow-own-target-headers.hmap -I/Users/jonpacker/Documents/Dev/TromsoNow/build/TromsoNow.build/Debug-iphoneos/TromsoNow.build/TromsoNow-all-target-headers.hmap -iquote /Users/jonpacker/Documents/Dev/TromsoNow/build/TromsoNow.build/Debug-iphoneos/TromsoNow.build/TromsoNow-project-headers.hmap -F/Users/jonpacker/Documents/Dev/TromsoNow/build/Debug-iphoneos -I/Users/jonpacker/Documents/Dev/TromsoNow/build/Debug-iphoneos/include -I/Users/jonpacker/Documents/Dev/TromsoNow/build/TromsoNow.build/Debug-iphoneos/TromsoNow.build/DerivedSources/armv7 -I/Users/jonpacker/Documents/Dev/TromsoNow/build/TromsoNow.build/Debug-iphoneos/TromsoNow.build/DerivedSources -include /var/folders/Hn/Hn9GUMEKECmBpGvXcLoGVU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TromsoNow_Prefix-ffpawconjevyyyeargkbiwvqiylx/TromsoNow_Prefix.pch -c /Users/jonpacker/Documents/Dev/TromsoNow/Classes/WeatherDataEntityView.m -o /Users/jonpacker/Documents/Dev/TromsoNow/build/TromsoNow.build/Debug-iphoneos/TromsoNow.build/Objects-normal/armv7/WeatherDataEntityView.o0#
-
-CCompileC build/TromsoNow.build/Debug-iphoneos/TromsoNow.build/Objects-normal/armv7/WeatherDataLayer.o /Users/jonpacker/Documents/Dev/TromsoNow/Classes/WeatherDataLayer.m normal armv7 objective-c com.apple.compilers.gcc.4_2
-s320252039.695033
-e320252041.984104
-r1
-xCompileC
-xbuild/TromsoNow.build/Debug-iphoneos/TromsoNow.build/Objects-normal/armv7/WeatherDataLayer.o
-x/Users/jonpacker/Documents/Dev/TromsoNow/Classes/WeatherDataLayer.m
-xnormal
-xarmv7
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@75"Compile /Users/jonpacker/Documents/Dev/TromsoNow/Classes/WeatherDataLayer.m320252039#320252041#0(0"0(0#0#67"/Users/jonpacker/Documents/Dev/TromsoNow/Classes/WeatherDataLayer.m8693219232#1818"    cd /Users/jonpacker/Documents/Dev/TromsoNow    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/jonpacker/Documents/Dev/TromsoNow/build/TromsoNow.build/Debug-iphoneos/TromsoNow.build/TromsoNow-generated-files.hmap -I/Users/jonpacker/Documents/Dev/TromsoNow/build/TromsoNow.build/Debug-iphoneos/TromsoNow.build/TromsoNow-own-target-headers.hmap -I/Users/jonpacker/Documents/Dev/TromsoNow/build/TromsoNow.build/Debug-iphoneos/TromsoNow.build/TromsoNow-all-target-headers.hmap -iquote /Users/jonpacker/Documents/Dev/TromsoNow/build/TromsoNow.build/Debug-iphoneos/TromsoNow.build/TromsoNow-project-headers.hmap -F/Users/jonpacker/Documents/Dev/TromsoNow/build/Debug-iphoneos -I/Users/jonpacker/Documents/Dev/TromsoNow/build/Debug-iphoneos/include -I/Users/jonpacker/Documents/Dev/TromsoNow/build/TromsoNow.build/Debug-iphoneos/TromsoNow.build/DerivedSources/armv7 -I/Users/jonpacker/Documents/Dev/TromsoNow/build/TromsoNow.build/Debug-iphoneos/TromsoNow.build/DerivedSources -include /var/folders/Hn/Hn9GUMEKECmBpGvXcLoGVU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TromsoNow_Prefix-ffpawconjevyyyeargkbiwvqiylx/TromsoNow_Prefix.pch -c /Users/jonpacker/Documents/Dev/TromsoNow/Classes/WeatherDataLayer.m -o /Users/jonpacker/Documents/Dev/TromsoNow/build/TromsoNow.build/Debug-iphoneos/TromsoNow.build/Objects-normal/armv7/WeatherDataLayer.o0#
-
-CCompileC build/TromsoNow.build/Debug-iphoneos/TromsoNow.build/Objects-normal/armv7/main.o /Users/jonpacker/Documents/Dev/TromsoNow/main.m normal armv7 objective-c com.apple.compilers.gcc.4_2
-s320252039.663435
-e320252041.982098
-r1
-xCompileC
-xbuild/TromsoNow.build/Debug-iphoneos/TromsoNow.build/Objects-normal/armv7/main.o
-x/Users/jonpacker/Documents/Dev/TromsoNow/main.m
-xnormal
-xarmv7
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@55"Compile /Users/jonpacker/Documents/Dev/TromsoNow/main.m320252039#320252041#0(0"0(0#0#47"/Users/jonpacker/Documents/Dev/TromsoNow/main.m8695694304#1786"    cd /Users/jonpacker/Documents/Dev/TromsoNow    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/jonpacker/Documents/Dev/TromsoNow/build/TromsoNow.build/Debug-iphoneos/TromsoNow.build/TromsoNow-generated-files.hmap -I/Users/jonpacker/Documents/Dev/TromsoNow/build/TromsoNow.build/Debug-iphoneos/TromsoNow.build/TromsoNow-own-target-headers.hmap -I/Users/jonpacker/Documents/Dev/TromsoNow/build/TromsoNow.build/Debug-iphoneos/TromsoNow.build/TromsoNow-all-target-headers.hmap -iquote /Users/jonpacker/Documents/Dev/TromsoNow/build/TromsoNow.build/Debug-iphoneos/TromsoNow.build/TromsoNow-project-headers.hmap -F/Users/jonpacker/Documents/Dev/TromsoNow/build/Debug-iphoneos -I/Users/jonpacker/Documents/Dev/TromsoNow/build/Debug-iphoneos/include -I/Users/jonpacker/Documents/Dev/TromsoNow/build/TromsoNow.build/Debug-iphoneos/TromsoNow.build/DerivedSources/armv7 -I/Users/jonpacker/Documents/Dev/TromsoNow/build/TromsoNow.build/Debug-iphoneos/TromsoNow.build/DerivedSources -include /var/folders/Hn/Hn9GUMEKECmBpGvXcLoGVU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TromsoNow_Prefix-ffpawconjevyyyeargkbiwvqiylx/TromsoNow_Prefix.pch -c /Users/jonpacker/Documents/Dev/TromsoNow/main.m -o /Users/jonpacker/Documents/Dev/TromsoNow/build/TromsoNow.build/Debug-iphoneos/TromsoNow.build/Objects-normal/armv7/main.o0#
-
-CCompileXIB /Users/jonpacker/Documents/Dev/TromsoNow/MainWindow.xib
-s313419616.860612
-e313419626.755016
-r1
-xCompileXIB
-x/Users/jonpacker/Documents/Dev/TromsoNow/MainWindow.xib
-lSLF07#2@25"CompileXIB MainWindow.xib313419616#313419626#0(0"0(0#0#55"/Users/jonpacker/Documents/Dev/TromsoNow/MainWindow.xib8620129600#550"    cd /Users/jonpacker/Documents/Dev/TromsoNow    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/jonpacker/Documents/Dev/TromsoNow/build/Debug-iphoneos/TromsoNow.app/MainWindow.nib /Users/jonpacker/Documents/Dev/TromsoNow/MainWindow.xib --sdk /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk0#
-
-CCompileXIB /Users/jonpacker/Documents/Dev/TromsoNow/TromsoNowViewController.xib
-s320678383.941323
-e320678390.142505
-r1
-xCompileXIB
-x/Users/jonpacker/Documents/Dev/TromsoNow/TromsoNowViewController.xib
-lSLF07#2@38"CompileXIB TromsoNowViewController.xib320678383#320678390#0(0"0(0#0#68"/Users/jonpacker/Documents/Dev/TromsoNow/TromsoNowViewController.xib8627266880#576"    cd /Users/jonpacker/Documents/Dev/TromsoNow    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.2    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/jonpacker/Documents/Dev/TromsoNow/build/Debug-iphoneos/TromsoNow.app/TromsoNowViewController.nib /Users/jonpacker/Documents/Dev/TromsoNow/TromsoNowViewController.xib --sdk /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk0#
-
-CCopyPNGFile /Users/jonpacker/Documents/Dev/TromsoNow/build/Debug-iphoneos/TromsoNow.app/bar.png Assetts/bar.png
-s313419616.862623
-e313419619.642751
-r1
-xCopyPNGFile
-x/Users/jonpacker/Documents/Dev/TromsoNow/build/Debug-iphoneos/TromsoNow.app/bar.png
-xAssetts/bar.png
-lSLF07#2@70"CopyPNGFile build/Debug-iphoneos/TromsoNow.app/bar.png Assetts/bar.png313419616#313419619#0(0"0(0#0#56"/Users/jonpacker/Documents/Dev/TromsoNow/Assetts/bar.png8619435584#570"    cd /Users/jonpacker/Documents/Dev/TromsoNow    setenv COPY_COMMAND /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/jonpacker/Documents/Dev/TromsoNow/Assetts/bar.png /Users/jonpacker/Documents/Dev/TromsoNow/build/Debug-iphoneos/TromsoNow.app/bar.png0#
-
-CCopyPNGFile /Users/jonpacker/Documents/Dev/TromsoNow/build/Debug-iphoneos/TromsoNow.app/bar2.png Assetts/bar2.png
-s320678384.041527
-e320678389.907383
-r1
-xCopyPNGFile
-x/Users/jonpacker/Documents/Dev/TromsoNow/build/Debug-iphoneos/TromsoNow.app/bar2.png
-xAssetts/bar2.png
-lSLF07#2@72"CopyPNGFile build/Debug-iphoneos/TromsoNow.app/bar2.png Assetts/bar2.png320678384#320678389#0(0"0(0#0#57"/Users/jonpacker/Documents/Dev/TromsoNow/Assetts/bar2.png8626798304#572"    cd /Users/jonpacker/Documents/Dev/TromsoNow    setenv COPY_COMMAND /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/jonpacker/Documents/Dev/TromsoNow/Assetts/bar2.png /Users/jonpacker/Documents/Dev/TromsoNow/build/Debug-iphoneos/TromsoNow.app/bar2.png0#
-
-CCopyPNGFile /Users/jonpacker/Documents/Dev/TromsoNow/build/Debug-iphoneos/TromsoNow.app/concept.png Assetts/concept.png
-s313419619.344683
-e313419619.618016
-r1
-xCopyPNGFile
-x/Users/jonpacker/Documents/Dev/TromsoNow/build/Debug-iphoneos/TromsoNow.app/concept.png
-xAssetts/concept.png
-lSLF07#2@78"CopyPNGFile build/Debug-iphoneos/TromsoNow.app/concept.png Assetts/concept.png313419619#313419619#0(0"0(0#0#60"/Users/jonpacker/Documents/Dev/TromsoNow/Assetts/concept.png8613432192#578"    cd /Users/jonpacker/Documents/Dev/TromsoNow    setenv COPY_COMMAND /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/jonpacker/Documents/Dev/TromsoNow/Assetts/concept.png /Users/jonpacker/Documents/Dev/TromsoNow/build/Debug-iphoneos/TromsoNow.app/concept.png0#
-
-CCopyPNGFile /Users/jonpacker/Documents/Dev/TromsoNow/build/Debug-iphoneos/TromsoNow.app/displayWeatherData.png Assetts/displayWeatherData.png
-s313419619.228382
-e313419619.344566
-r1
-xCopyPNGFile
-x/Users/jonpacker/Documents/Dev/TromsoNow/build/Debug-iphoneos/TromsoNow.app/displayWeatherData.png
-xAssetts/displayWeatherData.png
-lSLF07#2@100"CopyPNGFile build/Debug-iphoneos/TromsoNow.app/displayWeatherData.png Assetts/displayWeatherData.png313419619#313419619#0(0"0(0#0#71"/Users/jonpacker/Documents/Dev/TromsoNow/Assetts/displayWeatherData.png8618319840#600"    cd /Users/jonpacker/Documents/Dev/TromsoNow    setenv COPY_COMMAND /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/jonpacker/Documents/Dev/TromsoNow/Assetts/displayWeatherData.png /Users/jonpacker/Documents/Dev/TromsoNow/build/Debug-iphoneos/TromsoNow.app/displayWeatherData.png0#
-
-CCopyPNGFile /Users/jonpacker/Documents/Dev/TromsoNow/build/Debug-iphoneos/TromsoNow.app/uit.png uit.png
-s313419616.861957
-e313419619.228128
-r1
-xCopyPNGFile
-x/Users/jonpacker/Documents/Dev/TromsoNow/build/Debug-iphoneos/TromsoNow.app/uit.png
-xuit.png
-lSLF07#2@62"CopyPNGFile build/Debug-iphoneos/TromsoNow.app/uit.png uit.png313419616#313419619#0(0"0(0#0#48"/Users/jonpacker/Documents/Dev/TromsoNow/uit.png8619626368#562"    cd /Users/jonpacker/Documents/Dev/TromsoNow    setenv COPY_COMMAND /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/jonpacker/Documents/Dev/TromsoNow/uit.png /Users/jonpacker/Documents/Dev/TromsoNow/build/Debug-iphoneos/TromsoNow.app/uit.png0#
-
-CCpResource build/Debug-iphoneos/TromsoNow.app/ResourceRules.plist /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/ResourceRules.plist
-s313419616.820325
-e313419616.850441
-r1
-xCpResource
-xbuild/Debug-iphoneos/TromsoNow.app/ResourceRules.plist
-x/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/ResourceRules.plist
-lSLF07#2@94"Copy /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/ResourceRules.plist313419616#313419616#0(0"0(0#0#89"/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/ResourceRules.plist7738436701976933376#500"    cd /Users/jonpacker/Documents/Dev/TromsoNow    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/ResourceRules.plist /Users/jonpacker/Documents/Dev/TromsoNow/build/Debug-iphoneos/TromsoNow.app0#
-
-CCpResource build/Debug-iphoneos/TromsoNow.app/til.jpg Assetts/til.jpg
-s320671437.367263
-e320671437.628212
-r1
-xCpResource
-xbuild/Debug-iphoneos/TromsoNow.app/til.jpg
-xAssetts/til.jpg
-lSLF07#2@20"Copy Assetts/til.jpg320671437#320671437#0(0"0(0#0#56"/Users/jonpacker/Documents/Dev/TromsoNow/Assetts/til.jpg8640244608#467"    cd /Users/jonpacker/Documents/Dev/TromsoNow    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/jonpacker/Documents/Dev/TromsoNow/Assetts/til.jpg /Users/jonpacker/Documents/Dev/TromsoNow/build/Debug-iphoneos/TromsoNow.app0#
-
-CCpResource build/Debug-iphoneos/TromsoNow.app/til90.jpg Assetts/til90.jpg
-s320678383.994805
-e320678384.577733
-r1
-xCpResource
-xbuild/Debug-iphoneos/TromsoNow.app/til90.jpg
-xAssetts/til90.jpg
-lSLF07#2@22"Copy Assetts/til90.jpg320678383#320678384#0(0"0(0#0#58"/Users/jonpacker/Documents/Dev/TromsoNow/Assetts/til90.jpg8626245536#469"    cd /Users/jonpacker/Documents/Dev/TromsoNow    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/jonpacker/Documents/Dev/TromsoNow/Assetts/til90.jpg /Users/jonpacker/Documents/Dev/TromsoNow/build/Debug-iphoneos/TromsoNow.app0#
-
-CGenerateDSYMFile /Users/jonpacker/Documents/Dev/TromsoNow/build/Debug-iphoneos/TromsoNow.app.dSYM /Users/jonpacker/Documents/Dev/TromsoNow/build/Debug-iphoneos/TromsoNow.app/TromsoNow
-s320678393.840338
-e320678393.986504
-r1
-xGenerateDSYMFile
-x/Users/jonpacker/Documents/Dev/TromsoNow/build/Debug-iphoneos/TromsoNow.app.dSYM
-x/Users/jonpacker/Documents/Dev/TromsoNow/build/Debug-iphoneos/TromsoNow.app/TromsoNow
-lSLF07#2@101"GenerateDSYMFile build/Debug-iphoneos/TromsoNow.app.dSYM build/Debug-iphoneos/TromsoNow.app/TromsoNow320678393#320678393#0(0"0(0#0#85"/Users/jonpacker/Documents/Dev/TromsoNow/build/Debug-iphoneos/TromsoNow.app/TromsoNow8626509248#374"    cd /Users/jonpacker/Documents/Dev/TromsoNow    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Users/jonpacker/Documents/Dev/TromsoNow/build/Debug-iphoneos/TromsoNow.app/TromsoNow -o /Users/jonpacker/Documents/Dev/TromsoNow/build/Debug-iphoneos/TromsoNow.app.dSYM0#
-
-CLd /Users/jonpacker/Documents/Dev/TromsoNow/build/Debug-iphoneos/TromsoNow.app/TromsoNow normal armv7
-s320678392.840417
-e320678393.840220
-r1
-xLd
-x/Users/jonpacker/Documents/Dev/TromsoNow/build/Debug-iphoneos/TromsoNow.app/TromsoNow
-xnormal
-xarmv7
-lSLF07#2@90"Link /Users/jonpacker/Documents/Dev/TromsoNow/build/Debug-iphoneos/TromsoNow.app/TromsoNow320678392#320678393#0(0"0(0#0#0"8627896032#842"    cd /Users/jonpacker/Documents/Dev/TromsoNow    setenv IPHONEOS_DEPLOYMENT_TARGET 4.2    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -arch armv7 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -L/Users/jonpacker/Documents/Dev/TromsoNow/build/Debug-iphoneos -F/Users/jonpacker/Documents/Dev/TromsoNow/build/Debug-iphoneos -filelist /Users/jonpacker/Documents/Dev/TromsoNow/build/TromsoNow.build/Debug-iphoneos/TromsoNow.build/Objects-normal/armv7/TromsoNow.LinkFileList -dead_strip -miphoneos-version-min=4.2 -framework Foundation -framework UIKit -framework CoreGraphics -o /Users/jonpacker/Documents/Dev/TromsoNow/build/Debug-iphoneos/TromsoNow.app/TromsoNow0#
-
-CProcessInfoPlistFile /Users/jonpacker/Documents/Dev/TromsoNow/build/Debug-iphoneos/TromsoNow.app/Info.plist TromsoNow-Info.plist
-s320678383.935015
-e320678383.941182
-r1
-xProcessInfoPlistFile
-x/Users/jonpacker/Documents/Dev/TromsoNow/build/Debug-iphoneos/TromsoNow.app/Info.plist
-xTromsoNow-Info.plist
-lSLF07#2@28"Process TromsoNow-Info.plist320678383#320678383#0(0"0(0#0#61"/Users/jonpacker/Documents/Dev/TromsoNow/TromsoNow-Info.plist23644099914694768#578"    cd /Users/jonpacker/Documents/Dev/TromsoNow    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility TromsoNow-Info.plist -genpkginfo /Users/jonpacker/Documents/Dev/TromsoNow/build/Debug-iphoneos/TromsoNow.app/PkgInfo -expandbuildsettings -format binary -platform iphoneos -resourcerulesfile /Users/jonpacker/Documents/Dev/TromsoNow/build/Debug-iphoneos/TromsoNow.app/ResourceRules.plist -o /Users/jonpacker/Documents/Dev/TromsoNow/build/Debug-iphoneos/TromsoNow.app/Info.plist0#
-
-CProcessPCH /var/folders/Hn/Hn9GUMEKECmBpGvXcLoGVU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TromsoNow_Prefix-ffpawconjevyyyeargkbiwvqiylx/TromsoNow_Prefix.pch.gch TromsoNow_Prefix.pch normal armv7 objective-c com.apple.compilers.gcc.4_2
-s320252033.108755
-e320252039.663151
-r1
-xProcessPCH
-x/var/folders/Hn/Hn9GUMEKECmBpGvXcLoGVU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TromsoNow_Prefix-ffpawconjevyyyeargkbiwvqiylx/TromsoNow_Prefix.pch.gch
-xTromsoNow_Prefix.pch
-xnormal
-xarmv7
-xobjective-c
-xcom.apple.compilers.gcc.4_2
-lSLF07#2@31"Precompile TromsoNow_Prefix.pch320252033#320252039#0(0"0(0#0#61"/Users/jonpacker/Documents/Dev/TromsoNow/TromsoNow_Prefix.pch8685599456#1680"    cd /Users/jonpacker/Documents/Dev/TromsoNow    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch armv7 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=4.2 -iquote /Users/jonpacker/Documents/Dev/TromsoNow/build/TromsoNow.build/Debug-iphoneos/TromsoNow.build/TromsoNow-generated-files.hmap -I/Users/jonpacker/Documents/Dev/TromsoNow/build/TromsoNow.build/Debug-iphoneos/TromsoNow.build/TromsoNow-own-target-headers.hmap -I/Users/jonpacker/Documents/Dev/TromsoNow/build/TromsoNow.build/Debug-iphoneos/TromsoNow.build/TromsoNow-all-target-headers.hmap -iquote /Users/jonpacker/Documents/Dev/TromsoNow/build/TromsoNow.build/Debug-iphoneos/TromsoNow.build/TromsoNow-project-headers.hmap -F/Users/jonpacker/Documents/Dev/TromsoNow/build/Debug-iphoneos -I/Users/jonpacker/Documents/Dev/TromsoNow/build/Debug-iphoneos/include -I/Users/jonpacker/Documents/Dev/TromsoNow/build/TromsoNow.build/Debug-iphoneos/TromsoNow.build/DerivedSources/armv7 -I/Users/jonpacker/Documents/Dev/TromsoNow/build/TromsoNow.build/Debug-iphoneos/TromsoNow.build/DerivedSources -c /Users/jonpacker/Documents/Dev/TromsoNow/TromsoNow_Prefix.pch -o /var/folders/Hn/Hn9GUMEKECmBpGvXcLoGVU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/TromsoNow_Prefix-ffpawconjevyyyeargkbiwvqiylx/TromsoNow_Prefix.pch.gch0#
-
-CProcessProductPackaging "/Users/jonpacker/Library/MobileDevice/Provisioning Profiles/20438F21-93A7-4B1A-A936-E5BE2B77C8E1.mobileprovision" /Users/jonpacker/Documents/Dev/TromsoNow/build/Debug-iphoneos/TromsoNow.app/embedded.mobileprovision
-s317726572.303757
-e317726572.304973
-r1
-xProcessProductPackaging
-x/Users/jonpacker/Library/MobileDevice/Provisioning Profiles/20438F21-93A7-4B1A-A936-E5BE2B77C8E1.mobileprovision
-x/Users/jonpacker/Documents/Dev/TromsoNow/build/Debug-iphoneos/TromsoNow.app/embedded.mobileprovision
-lSLF07#2@198"ProcessProductPackaging "/Users/jonpacker/Library/MobileDevice/Provisioning Profiles/20438F21-93A7-4B1A-A936-E5BE2B77C8E1.mobileprovision" build/Debug-iphoneos/TromsoNow.app/embedded.mobileprovision317726572#317726572#0(0"0(0#0#100"/Users/jonpacker/Documents/Dev/TromsoNow/build/Debug-iphoneos/TromsoNow.app/embedded.mobileprovision8615006880#433"    cd /Users/jonpacker/Documents/Dev/TromsoNow    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    <com.apple.tools.product-pkg-utility> "/Users/jonpacker/Library/MobileDevice/Provisioning Profiles/20438F21-93A7-4B1A-A936-E5BE2B77C8E1.mobileprovision" -o /Users/jonpacker/Documents/Dev/TromsoNow/build/Debug-iphoneos/TromsoNow.app/embedded.mobileprovision0#
-
-CProcessProductPackaging "/Users/jonpacker/Library/MobileDevice/Provisioning Profiles/7B468C40-3E6C-4F03-B3D0-61AEEB07F5E6.mobileprovision" /Users/jonpacker/Documents/Dev/TromsoNow/build/Debug-iphoneos/TromsoNow.app/embedded.mobileprovision
-s320252043.028970
-e320252043.070434
-r1
-xProcessProductPackaging
-x/Users/jonpacker/Library/MobileDevice/Provisioning Profiles/7B468C40-3E6C-4F03-B3D0-61AEEB07F5E6.mobileprovision
-x/Users/jonpacker/Documents/Dev/TromsoNow/build/Debug-iphoneos/TromsoNow.app/embedded.mobileprovision
-lSLF07#2@198"ProcessProductPackaging "/Users/jonpacker/Library/MobileDevice/Provisioning Profiles/7B468C40-3E6C-4F03-B3D0-61AEEB07F5E6.mobileprovision" build/Debug-iphoneos/TromsoNow.app/embedded.mobileprovision320252043#320252043#0(0"0(0#0#100"/Users/jonpacker/Documents/Dev/TromsoNow/build/Debug-iphoneos/TromsoNow.app/embedded.mobileprovision8692773280#433"    cd /Users/jonpacker/Documents/Dev/TromsoNow    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    <com.apple.tools.product-pkg-utility> "/Users/jonpacker/Library/MobileDevice/Provisioning Profiles/7B468C40-3E6C-4F03-B3D0-61AEEB07F5E6.mobileprovision" -o /Users/jonpacker/Documents/Dev/TromsoNow/build/Debug-iphoneos/TromsoNow.app/embedded.mobileprovision0#
-
-CProcessProductPackaging "/Users/jonpacker/Library/MobileDevice/Provisioning Profiles/ACB5B112-909E-44C0-B6CC-7936980111A8.mobileprovision" /Users/jonpacker/Documents/Dev/TromsoNow/build/Debug-iphoneos/TromsoNow.app/embedded.mobileprovision
-s320671437.630081
-e320671437.676153
-r1
-xProcessProductPackaging
-x/Users/jonpacker/Library/MobileDevice/Provisioning Profiles/ACB5B112-909E-44C0-B6CC-7936980111A8.mobileprovision
-x/Users/jonpacker/Documents/Dev/TromsoNow/build/Debug-iphoneos/TromsoNow.app/embedded.mobileprovision
-lSLF07#2@198"ProcessProductPackaging "/Users/jonpacker/Library/MobileDevice/Provisioning Profiles/ACB5B112-909E-44C0-B6CC-7936980111A8.mobileprovision" build/Debug-iphoneos/TromsoNow.app/embedded.mobileprovision320671437#320671437#0(0"0(0#0#100"/Users/jonpacker/Documents/Dev/TromsoNow/build/Debug-iphoneos/TromsoNow.app/embedded.mobileprovision8638705312#433"    cd /Users/jonpacker/Documents/Dev/TromsoNow    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    <com.apple.tools.product-pkg-utility> "/Users/jonpacker/Library/MobileDevice/Provisioning Profiles/ACB5B112-909E-44C0-B6CC-7936980111A8.mobileprovision" -o /Users/jonpacker/Documents/Dev/TromsoNow/build/Debug-iphoneos/TromsoNow.app/embedded.mobileprovision0#
-
-CProcessProductPackaging "/Users/jonpacker/Library/MobileDevice/Provisioning Profiles/C9C086D9-FD60-4DC6-8536-077A2BA9C07E.mobileprovision" /Users/jonpacker/Documents/Dev/TromsoNow/build/Debug-iphoneos/TromsoNow.app/embedded.mobileprovision
-s313419633.345058
-e313419633.399406
-r1
-xProcessProductPackaging
-x/Users/jonpacker/Library/MobileDevice/Provisioning Profiles/C9C086D9-FD60-4DC6-8536-077A2BA9C07E.mobileprovision
-x/Users/jonpacker/Documents/Dev/TromsoNow/build/Debug-iphoneos/TromsoNow.app/embedded.mobileprovision
-lSLF07#2@198"ProcessProductPackaging "/Users/jonpacker/Library/MobileDevice/Provisioning Profiles/C9C086D9-FD60-4DC6-8536-077A2BA9C07E.mobileprovision" build/Debug-iphoneos/TromsoNow.app/embedded.mobileprovision313419633#313419633#0(0"0(0#0#100"/Users/jonpacker/Documents/Dev/TromsoNow/build/Debug-iphoneos/TromsoNow.app/embedded.mobileprovision8608327744#433"    cd /Users/jonpacker/Documents/Dev/TromsoNow    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    <com.apple.tools.product-pkg-utility> "/Users/jonpacker/Library/MobileDevice/Provisioning Profiles/C9C086D9-FD60-4DC6-8536-077A2BA9C07E.mobileprovision" -o /Users/jonpacker/Documents/Dev/TromsoNow/build/Debug-iphoneos/TromsoNow.app/embedded.mobileprovision0#
-
-CProcessProductPackaging /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/Entitlements.plist /Users/jonpacker/Documents/Dev/TromsoNow/build/TromsoNow.build/Debug-iphoneos/TromsoNow.build/TromsoNow.xcent
-s320678393.990947
-e320678394.047585
-r1
-xProcessProductPackaging
-x/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/Entitlements.plist
-x/Users/jonpacker/Documents/Dev/TromsoNow/build/TromsoNow.build/Debug-iphoneos/TromsoNow.build/TromsoNow.xcent
-lSLF07#2@181"ProcessProductPackaging /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/Entitlements.plist build/TromsoNow.build/Debug-iphoneos/TromsoNow.build/TromsoNow.xcent320678393#320678394#0(0"0(0#0#109"/Users/jonpacker/Documents/Dev/TromsoNow/build/TromsoNow.build/Debug-iphoneos/TromsoNow.build/TromsoNow.xcent8627827168#442"    cd /Users/jonpacker/Documents/Dev/TromsoNow    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    <com.apple.tools.product-pkg-utility> /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/Entitlements.plist -entitlements -format xml -o /Users/jonpacker/Documents/Dev/TromsoNow/build/TromsoNow.build/Debug-iphoneos/TromsoNow.build/TromsoNow.xcent0#
-
-CTouch /Users/jonpacker/Documents/Dev/TromsoNow/build/Debug-iphoneos/TromsoNow.app
-s320678393.986844
-e320678393.990810
-r1
-xTouch
-x/Users/jonpacker/Documents/Dev/TromsoNow/build/Debug-iphoneos/TromsoNow.app
-lSLF07#2@81"Touch /Users/jonpacker/Documents/Dev/TromsoNow/build/Debug-iphoneos/TromsoNow.app320678393#320678393#0(0"0(0#0#0"8625264352#270"    cd /Users/jonpacker/Documents/Dev/TromsoNow    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/jonpacker/Documents/Dev/TromsoNow/build/Debug-iphoneos/TromsoNow.app0#
-
