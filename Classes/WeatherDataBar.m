@@ -55,10 +55,10 @@ const CGFloat dataEntityInterval = 254.0f;
     dataView.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"bar2.png"]];
     dataView.scrollEnabled = YES;
     
-    //UITapGestureRecognizer* tgr = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(receiveTapFrom:)];
-    //tgr.numberOfTouchesRequired = 1;
-    //tgr.delegate = self;
-    //[self addGestureRecognizer:tgr];
+    UITapGestureRecognizer* tgr = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(receiveTapFrom:)];
+    tgr.numberOfTouchesRequired = 1;
+    tgr.delegate = self;
+    [self addGestureRecognizer:tgr];
     
     self.frame = CGRectMake(0.0f, 2.0f, 1024.0f, 179.0f);
     dataView.frame = CGRectMake(0.0f, 0.0f, 1024.0f, 181.0f);
@@ -70,7 +70,7 @@ const CGFloat dataEntityInterval = 254.0f;
   }
   return self;
 }
-/*
+
 - (BOOL) gestureRecognizer:(UIGestureRecognizer*)recognizer
         shouldReceiveTouch:(UITouch *)touch
 {
@@ -81,7 +81,7 @@ const CGFloat dataEntityInterval = 254.0f;
     if (![dataEntity isKindOfClass:[WeatherDataEntityView class]]) continue;
     
     CGPoint locationInDataEntity = [touch locationInView:dataEntity];
-    if (CGRectContainsPoint(dataEntity.detailDisclosure.frame, locationInDataEntity))
+    if ([dataEntity shouldRespondToDetailDisclosureTouchAtPoint:locationInDataEntity])
     {
       willTouchGraphButtonWithTag = dataEntity.tag;
       hitsInsideGraphToggleButton = YES;
@@ -91,16 +91,37 @@ const CGFloat dataEntityInterval = 254.0f;
   
   return hitsInsideGraphToggleButton;
 }
- */
-/*
+ 
+
 - (void) receiveTapFrom:(UIGestureRecognizer*) ugr
 {
   WeatherDataEntityView* dataEntity = (WeatherDataEntityView*)[dataView viewWithTag:willTouchGraphButtonWithTag];
-  dataEntity.loading = YES;
-  [self performSelectorInBackground:@selector(graphViewWithTag:) withObject:[NSNumber numberWithInt:willTouchGraphButtonWithTag]];
-  [self setView:dataEntity isIsolated:YES];
+
+  if (dataEntity.graph.drawGraph == YES) {
+    [dataEntity hideGraph];
+    [UIView animateWithDuration:0.5 animations:^{
+      NSArray* subviews = dataView.subviews;
+      for (WeatherDataEntityView* _dataEntity in subviews) {
+        if (![_dataEntity isKindOfClass:[WeatherDataEntityView class]] || _dataEntity.tag <= dataEntity.tag) continue;
+        
+        _dataEntity.center = CGPointMake(_dataEntity.center.x - 566, _dataEntity.center.y);
+      }
+      dataView.contentSize = CGSizeMake(dataView.contentSize.width - 566, dataView.contentSize.height);
+    }];
+  } else {
+    [dataEntity displayGraph];
+    [UIView animateWithDuration:0.5 animations:^{
+      NSArray* subviews = dataView.subviews;
+      for (WeatherDataEntityView* _dataEntity in subviews) {
+        if (![_dataEntity isKindOfClass:[WeatherDataEntityView class]] || _dataEntity.tag <= dataEntity.tag) continue;
+        
+        _dataEntity.center = CGPointMake(_dataEntity.center.x + 566, _dataEntity.center.y);
+      }
+      dataView.contentSize = CGSizeMake(dataView.contentSize.width + 566, dataView.contentSize.height);
+    }];
+  }
 }
-*/
+
 // next - read json from host. delay transform until data is ready
 // draw graph.
 /*
@@ -143,10 +164,6 @@ const CGFloat dataEntityInterval = 254.0f;
 }
 */
 
-- (void) refreshData 
-{
-	[self performSelectorInBackground:@selector(_thr_refreshData) withObject:nil];
-}
 
 - (void) _thr_refreshData 
 {
@@ -163,9 +180,14 @@ const CGFloat dataEntityInterval = 254.0f;
 		WeatherDataEntityView *view = (WeatherDataEntityView*)[dataView viewWithTag:idx + 1];
 		
 		view.data = entity;
+    view.graph.dataSource = gdata;
 	}];
 	
 	[pool release];
+}
+- (void) refreshData 
+{
+	[self performSelectorInBackground:@selector(_thr_refreshData) withObject:nil];
 }
 
 - (BOOL) minified
@@ -181,6 +203,10 @@ const CGFloat dataEntityInterval = 254.0f;
 	}
 	
 	minified = kMinified;
+  
+  if (minified) {
+    dataView.contentOffset = CGPointMake(0, 0);
+  }
 	
 	NSArray* views = [dataView subviews];
 	[views enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL* stop) {	

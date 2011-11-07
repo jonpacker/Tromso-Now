@@ -304,7 +304,6 @@
 		1D6058940D05DD3E006BFB54 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ADDITIONAL_SDKS = "/Library/SDKs/CorePlotSDK/${PLATFORM_NAME}.sdk";
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = NO;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -312,10 +311,10 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = TromsoNow_Prefix.pch;
 				INFOPLIST_FILE = "TromsoNow-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-all_load",
-					"-lCorePlot",
 				);
 				PRODUCT_NAME = TromsoNow;
 			};
@@ -324,18 +323,21 @@
 		1D6058950D05DD3E006BFB54 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ADDITIONAL_SDKS = "/Library/SDKs/CorePlotSDK/${PLATFORM_NAME}.sdk";
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Jonathan Packer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Jonathan Packer";
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = TromsoNow_Prefix.pch;
 				INFOPLIST_FILE = "TromsoNow-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.2;
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-all_load",
-					"-lCorePlot",
 				);
 				PRODUCT_NAME = TromsoNow;
+				PROVISIONING_PROFILE = "90B6881D-196B-4065-AECA-7864764AEADF";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "90B6881D-196B-4065-AECA-7864764AEADF";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;

@@ -12,7 +12,7 @@ static const CGFloat leftPad = 50.0f;
 static const NSInteger intervalCount = 5;
 static const CGFloat topPad = 15.0f;
 static const CGFloat bottomPad = 15.0f;
-static const CGFloat rightPad = 20.0f;
+static const CGFloat rightPad = 35.0f;
 
 static const CGFloat lineBaseTrans = 0.05f;
 static const CGFloat lineTransVar = 0.25f;
@@ -42,7 +42,7 @@ static const CGFloat lineTransVar = 0.25f;
 - (void) setDrawGraph:(BOOL)drawGraph
 {
   _drawGraph = drawGraph;
-  if (drawGraph) [self setNeedsDisplay];
+  [self setNeedsDisplay];
 }
 
 - (BOOL) drawGraph

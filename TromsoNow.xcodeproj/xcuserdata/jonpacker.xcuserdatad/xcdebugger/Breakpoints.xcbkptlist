@@ -71,11 +71,11 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "Classes/WeatherDataEntityView.m"
-         timestampString = "324040019.990489"
+         timestampString = "326641026.287527"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "124"
-         endingLineNumber = "124"
+         startingLineNumber = "137"
+         endingLineNumber = "137"
          landmarkName = "-becomeGraphWithData:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -85,11 +85,11 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "Classes/WeatherDataGraphView.m"
-         timestampString = "324012295.700048"
+         timestampString = "324125174.159572"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "64"
-         endingLineNumber = "64"
+         startingLineNumber = "82"
+         endingLineNumber = "82"
          landmarkName = "-drawRect:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -99,13 +99,13 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "Classes/WeatherDataBar.m"
-         timestampString = "324040088.394394"
+         timestampString = "326640959.871866"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "109"
-         endingLineNumber = "109"
-         landmarkName = "-graphViewWithTag:"
-         landmarkType = "5">
+         startingLineNumber = "132"
+         endingLineNumber = "132"
+         landmarkName = "@implementation WeatherDataBar"
+         landmarkType = "3">
       </FileBreakpoint>
       <FileBreakpoint
          shouldBeEnabled = "No"
@@ -113,11 +113,11 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "Classes/WeatherDataEntityView.m"
-         timestampString = "324040019.990489"
+         timestampString = "326641026.287527"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "133"
-         endingLineNumber = "133"
+         startingLineNumber = "146"
+         endingLineNumber = "146"
          landmarkName = "-becomeGraphWithData:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -127,11 +127,11 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "Classes/WeatherDataEntityView.m"
-         timestampString = "324040019.990489"
+         timestampString = "326640959.871866"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "71"
-         endingLineNumber = "71"
+         startingLineNumber = "82"
+         endingLineNumber = "82"
          landmarkName = "-initWithData:atPoint:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -141,11 +141,11 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "Classes/WeatherDataGraphView.m"
-         timestampString = "323963801.710577"
+         timestampString = "324125174.159572"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "41"
-         endingLineNumber = "41"
+         startingLineNumber = "59"
+         endingLineNumber = "59"
          landmarkName = "-drawRect:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -155,12 +155,26 @@
          continueAfterRunningActions = "No"
          isPathRelative = "1"
          filePath = "Classes/WeatherDataGraphView.m"
-         timestampString = "324012295.700048"
+         timestampString = "324125174.159572"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "77"
-         endingLineNumber = "77"
+         startingLineNumber = "95"
+         endingLineNumber = "95"
          landmarkName = "-drawRect:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         isPathRelative = "1"
+         filePath = "Classes/WeatherDataGraphView.m"
+         timestampString = "324125174.159572"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "35"
+         endingLineNumber = "35"
+         landmarkName = "-initWithFrame:"
          landmarkType = "5">
       </FileBreakpoint>
    </FileBreakpoints>

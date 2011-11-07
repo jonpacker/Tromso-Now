@@ -8,13 +8,16 @@
 
 #import "WeatherDataEntityView.h"
 
+static const int peek_sz = 31;
+static const int graph_sz = 600;
+static const int graph_offset = 223;
 
 @implementation WeatherDataEntityView
 
 @synthesize
 	dataLabel,
 	unitLabel,
-	labelLabel,drawerEdgeImage;
+	labelLabel,drawerEdgeImage, plusminus;
 
 -(id) initWithData:(WeatherDataEntity*)wdata graphData:(NSArray*)graphData atPoint:(CGPoint)point
 {
@@ -29,12 +32,12 @@
     self.clipsToBounds = NO;
 		self.data = wdata;
     
-    UIView* backgroundImage = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 223, 137)];
+    backgroundImage = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 223, 137)];
     backgroundImage.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"bar"]];
     [self addSubview:backgroundImage];
     [backgroundImage release];
 
-    UIButton* plusminus = [UIButton buttonWithType:UIButtonTypeCustom];
+    plusminus = [UIButton buttonWithType:UIButtonTypeCustom];
     
     [plusminus setBackgroundImage:[UIImage imageNamed:@"plus"] forState:UIControlStateNormal];
     [plusminus setBackgroundImage:[UIImage imageNamed:@"minus"] forState:UIControlStateSelected];
@@ -45,9 +48,11 @@
     plusminus.alpha = 0.8;
     plusminus.enabled = YES;
     
-    [plusminus addTarget:self action:@selector(display) forControlEvents:UIControlEventTouchUpInside];
-    
     [self addSubview:plusminus];
+    
+    UITapGestureRecognizer* tgr = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(displayGraph)];
+    [self addGestureRecognizer:tgr];
+    [tgr release];
     
 		dataLabel.shadowOffset = CGSizeMake(0.0f, 2.0f);
 		unitLabel.shadowOffset = CGSizeMake(0.0f, 2.0f);
@@ -94,11 +99,38 @@
 	}
 	return self;
 }
+
+- (BOOL) shouldRespondToDetailDisclosureTouchAtPoint:(CGPoint)point  {
+  return CGRectContainsPoint(plusminus.frame, point);
+}
+
+- (WeatherDataGraphView*) graph {
+  return _graph;
+}
+
+- (void) displayGraph
+{
+  _graph.drawGraph = YES;
+  plusminus.selected = YES;
+  [UIView animateWithDuration:0.5 animations:^{
+    _graph.frame = CGRectMake(223, 2, 600, 135);
+    plusminus.center = CGPointMake(plusminus.center.x + 566, plusminus.center.y);
+  }];
+}
+
+- (void) hideGraph
+{
+  plusminus.selected = NO;
+  [UIView animateWithDuration:0.5 animations:^{
+    _graph.frame = CGRectMake(-graph_sz + graph_offset + peek_sz, 2,  graph_sz, 135);
+    plusminus.center = CGPointMake(plusminus.center.x -566, plusminus.center.y);
+  } completion:^(BOOL finished) {  
+    _graph.drawGraph = NO;
+  }];
+}
+
 - (void) setupGraphWithData:(NSArray *)kData 
 {
-  const int peek_sz = 31;
-  const int graph_sz = 600;
-  const int graph_offset = 223;
   
   _graph = [[WeatherDataGraphView alloc] initWithFrame:CGRectMake(-graph_sz + graph_offset + peek_sz, 2,  graph_sz, 135)];
   CGFloat low = CGFLOAT_MAX, high = CGFLOAT_MIN;
@@ -176,6 +208,10 @@
 	dataLabel.frame = CGRectMake(20.0f, 13.0f, 180, 60.0f);
 	unitLabel.frame = minified ? CGRectMake(60.0f, 33.0f, 245.0f, 20.0f) : CGRectMake(25.0f, 78.0f, 245.0f, 20.0f);
 	labelLabel.frame = CGRectMake(25.0f, 105.0f, 245.0f, 30.0f);
+  _graph.hidden = minified;
+  drawerEdgeImage.hidden = minified;
+  backgroundImage.hidden = minified;
+  plusminus.hidden = minified;
 }
 
 -(void) setMinified:(BOOL)kMinified
